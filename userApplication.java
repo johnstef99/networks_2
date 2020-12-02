@@ -12,10 +12,11 @@ import ithaki_api.Packet;
 
 public class userApplication {
   // GLOBAL
-  static int SERVER_PORT = 38018;
-  static int CLIENT_PORT = 48018;
-  static int ECHO_CODE = 4454;
+  static int SERVER_PORT = 38024;
+  static int CLIENT_PORT = 48024;
+  static int ECHO_CODE = 4389;
   static int IMG_CODE = 6059;
+  static int SOUND_CODE = 101;
   static String resultsDir = "../results/";
   static DatagramSocket SEND_SOCKET;
   static DatagramSocket RECIEVE_SOCKET;
@@ -26,12 +27,13 @@ public class userApplication {
     System.out.println("           ITHAKI          ");
     System.out.println("===========================\n");
 
-    ITHAKI ithaki = new ITHAKI(SERVER_PORT, CLIENT_PORT, ECHO_CODE, IMG_CODE);
+    ITHAKI ithaki = new ITHAKI(SERVER_PORT, CLIENT_PORT, ECHO_CODE, IMG_CODE, SOUND_CODE);
 
-    // echo(ithaki, 2, true);
+    echo(ithaki, 2, true);
     // echo(ithaki, 30, false);
     // images(ithaki);
     // temperatures(ithaki);
+    ithaki.getSound();
   }
 
   /**
@@ -58,7 +60,7 @@ public class userApplication {
       DecimalFormat per = new DecimalFormat("#0.00");
       for (double now = System.currentTimeMillis(); now < startTime + whoManySec * 1000; now = System
           .currentTimeMillis()) {
-        Packet aPacket = ithaki.getPacket(withDelay, 0);
+        Packet aPacket = ithaki.getPacket(withDelay, -1);
         double progress = ((now - startTime) / (whoManySec * 1000)) * 100;
         System.out.println(per.format(progress) + "%\t" + aPacket.toString());
         echo_writer.write(String.valueOf(aPacket.responseTime) + "\n");

@@ -19,6 +19,11 @@ public class Image {
     this.responseTime = responseTime;
   }
 
+  /**
+   * Writes imageBytes to file
+   *
+   * @param filename The name of the file to write the image (eg. image1.jpg)
+   */
   public void writeToFile(String filename) {
     FileOutputStream os;
     try {
