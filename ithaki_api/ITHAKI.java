@@ -212,11 +212,8 @@ public class ITHAKI {
           if (i == 0)
             song_bytes[i] = (byte) leftByte;
           else
-            song_bytes[i * 2] = (byte) (leftByte + song_bytes[(i * 2) - 1]);
-          System.out.print(song_bytes[i * 2]);
-          song_bytes[(i * 2) + 1] = (byte) (rightByte + song_bytes[i * 2]);
-          System.out.println(song_bytes[(i * 2) + 1]);
-
+            song_bytes[i * 2 + p * 256] = (byte) (leftByte + (int) song_bytes[(i * 2 + p * 256) - 1]);
+          song_bytes[(i * 2) + p * 256 + 1] = (byte) (rightByte + (int) song_bytes[i * 2 + p * 256]);
         }
       } catch (SocketTimeoutException e) {
         errorPrint("Timeout on packet num: #" + Integer.toString(p));
@@ -232,6 +229,9 @@ public class ITHAKI {
       AudioFormat af = new AudioFormat(8000, 8, 1, true, false);
       SourceDataLine player = AudioSystem.getSourceDataLine(af);
       player.open(af, 32000);
+      for(byte b: song_bytes){
+        System.out.println(b);
+      }
       player.start();
       player.write(song_bytes, 0, 256 * numOfPackets);
       player.stop();
