@@ -182,7 +182,7 @@ public class ITHAKI {
   public void getSound() {
     long startTime = System.currentTimeMillis();
     int numOfPackets = 300;
-    byte[] code = new String(new String(sound_code) + "L01" + "F300").getBytes();
+    byte[] code = new String(new String(sound_code) + "T300").getBytes();
     DatagramPacket sendPacket = new DatagramPacket(code, code.length, server_address, server_port);
     try {
       ithakiPrint(new String(code) + " sent");
@@ -204,16 +204,18 @@ public class ITHAKI {
       try {
         recieveSocket.receive(recievePacket);
         for (int i = 0; i <= 127; i++) {
-          byte pair = buffer[i];
-          rightCompressedByte = pair & 15;
+          int pair = (int) buffer[i];
           leftCompressedByte = (pair >>> 4) & 15;
+          rightCompressedByte = pair & 15;
           leftByte = leftCompressedByte - 8;
           rightByte = rightCompressedByte - 8;
           if (i == 0)
             song_bytes[i] = (byte) leftByte;
           else
-            song_bytes[i * 2] = (byte) (leftByte + (int) song_bytes[(i * 2) - 1]);
-          song_bytes[(i * 2) + 1] = (byte) (rightByte + (int) song_bytes[i * 2]);
+            song_bytes[i * 2] = (byte) (leftByte + song_bytes[(i * 2) - 1]);
+          System.out.print(song_bytes[i * 2]);
+          song_bytes[(i * 2) + 1] = (byte) (rightByte + song_bytes[i * 2]);
+          System.out.println(song_bytes[(i * 2) + 1]);
 
         }
       } catch (SocketTimeoutException e) {
