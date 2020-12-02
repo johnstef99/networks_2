@@ -73,7 +73,6 @@ public class ITHAKI {
    * @return {@link Packet}
    */
   public Packet getPacket(boolean withDelay, int sensor) {
-    long startTime = System.currentTimeMillis();
     byte[] code = echo_code;
     if (!withDelay)
       code = new String("E0000").getBytes();
@@ -90,6 +89,7 @@ public class ITHAKI {
     }
     byte[] buffer = new byte[2048];
     DatagramPacket recievePacket = new DatagramPacket(buffer, buffer.length);
+    long startTime = System.currentTimeMillis();
     while (true) {
       try {
         recieveSocket.receive(recievePacket);
