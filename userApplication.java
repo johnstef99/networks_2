@@ -9,6 +9,7 @@ import ithaki_api.CAMERAS;
 import ithaki_api.ITHAKI;
 import ithaki_api.Image;
 import ithaki_api.Packet;
+import ithaki_api.Sound;
 
 public class userApplication {
   // GLOBAL
@@ -16,7 +17,7 @@ public class userApplication {
   static int CLIENT_PORT = 48024;
   static int ECHO_CODE = 4389;
   static int IMG_CODE = 6059;
-  static int SOUND_CODE = 101;
+  static int SOUND_CODE = 9758;
   static String resultsDir = "../results/";
   static DatagramSocket SEND_SOCKET;
   static DatagramSocket RECIEVE_SOCKET;
@@ -29,11 +30,13 @@ public class userApplication {
 
     ITHAKI ithaki = new ITHAKI(SERVER_PORT, CLIENT_PORT, ECHO_CODE, IMG_CODE, SOUND_CODE);
 
-    echo(ithaki, 2, true);
+    // echo(ithaki, 2, true);
     // echo(ithaki, 30, false);
     // images(ithaki);
     // temperatures(ithaki);
-    ithaki.getSound();
+    Sound aSound = ithaki.getSound(300, 1, true);
+    aSound.play();
+    //aSound.writeToFile(resultsDir + "sound_file.txt");
   }
 
   /**

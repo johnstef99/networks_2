@@ -9,11 +9,6 @@ import java.net.SocketTimeoutException;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.SourceDataLine;
-
 public class ITHAKI {
   private int server_port;
   private int client_port;
@@ -38,8 +33,7 @@ public class ITHAKI {
     this.echo_code = new String("E" + Integer.toString(echo_code)).getBytes();
     // UDP=1024 to recieve image faster
     this.image_code = new String("M" + Integer.toString(image_code)).getBytes();
-    // this.sound_code = new String("A" + Integer.toString(sound_code)).getBytes();
-    this.sound_code = new String("A0101").getBytes();
+    this.sound_code = new String("A" + Integer.toString(sound_code)).getBytes();
     setup();
     ithakiPrint("initialised");
   }
@@ -179,10 +173,29 @@ public class ITHAKI {
     return new Image(imageBytes, elapsedTime);
   }
 
-  public void getSound() {
+  /**
+   *
+   * @param numOfPackets number of packets between 1 and 999
+   * @param b            multiplyer
+   * @param sound_type   pass 0 to get sound from generator or 1-99 to get a song
+   * @param adaptive     pass true for AQ-DPCM and false for DPCM
+   * @return {@link Sound}
+   */
+  public Sound getSound(int numOfPackets, int sound_type, boolean adaptive) {
     long startTime = System.currentTimeMillis();
-    int numOfPackets = 300;
-    byte[] code = new String(new String(sound_code) + "T300").getBytes();
+    String Y = "T";
+    String L = "";
+    String AQ = "";
+    if (adaptive)
+      AQ = "AQ";
+    if (sound_type >= 1 && sound_type <= 99) {
+      Y = "F";
+      L = "L";
+      if (sound_type <= 9)
+        L += "0";
+      L += String.valueOf(sound_type);
+    }
+    byte[] code = new String(new String(sound_code) + L + AQ + Y + String.valueOf(numOfPackets)).getBytes();
     DatagramPacket sendPacket = new DatagramPacket(code, code.length, server_address, server_port);
     try {
       ithakiPrint(new String(code) + " sent");
@@ -191,30 +204,18 @@ public class ITHAKI {
       errorPrint("Could not send sound packet");
       e.printStackTrace();
     }
-    byte[] buffer = new byte[128];
+    byte[] buffer = new byte[132];
     DatagramPacket recievePacket = new DatagramPacket(buffer, buffer.length);
 
-    byte[] song_bytes = new byte[256 * numOfPackets];
-    int leftCompressedByte = 0;
-    int rightCompressedByte = 0;
-    int leftByte = 0;
-    int rightByte = 0;
+    Sound sound = new Sound(adaptive, numOfPackets);
     ithakiPrint("Start getting sound packets");
     for (int p = 0; p < numOfPackets; p++) {
+      if (p % 100 == 0) {
+        ithakiPrint(String.valueOf(p) + " packets of " + String.valueOf(numOfPackets) + " received");
+      }
       try {
         recieveSocket.receive(recievePacket);
-        for (int i = 0; i <= 127; i++) {
-          int pair = (int) buffer[i];
-          leftCompressedByte = (pair >>> 4) & 15;
-          rightCompressedByte = pair & 15;
-          leftByte = leftCompressedByte - 8;
-          rightByte = rightCompressedByte - 8;
-          if (i == 0)
-            song_bytes[i] = (byte) leftByte;
-          else
-            song_bytes[i * 2 + p * 256] = (byte) (leftByte + (int) song_bytes[(i * 2 + p * 256) - 1]);
-          song_bytes[(i * 2) + p * 256 + 1] = (byte) (rightByte + (int) song_bytes[i * 2 + p * 256]);
-        }
+        sound.addPakcet(buffer, p);
       } catch (SocketTimeoutException e) {
         errorPrint("Timeout on packet num: #" + Integer.toString(p));
       } catch (IOException e) {
@@ -223,28 +224,13 @@ public class ITHAKI {
         System.exit(1);
       }
     }
-
-    try {
-      ithakiPrint("Trying to play sound");
-      AudioFormat af = new AudioFormat(8000, 8, 1, true, false);
-      SourceDataLine player = AudioSystem.getSourceDataLine(af);
-      player.open(af, 32000);
-      for(byte b: song_bytes){
-        System.out.println(b);
-      }
-      player.start();
-      player.write(song_bytes, 0, 256 * numOfPackets);
-      player.stop();
-      player.close();
-    } catch (LineUnavailableException e) {
-      e.printStackTrace();
-    }
-
     long elapsedTime = System.currentTimeMillis() - startTime;
+    sound.responseTime = elapsedTime;
+    return sound;
   }
 
   // beautify
-  private void errorPrint(String error) {
+  static void errorPrint(String error) {
     System.out.println("ITHAKI: -_- " + error + " -_-");
   }
 
