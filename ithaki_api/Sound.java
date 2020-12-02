@@ -16,6 +16,9 @@ public class Sound {
   public final boolean isAdaptive;
   public final int numOfPackets;
   private byte[] sound_bytes;
+  private byte[] subs_bytes;
+  private byte[] m_bytes;
+  private byte[] b_bytes;
 
   /**
    *
@@ -26,6 +29,9 @@ public class Sound {
     this.isAdaptive = isAdaptive;
     this.numOfPackets = numOfPackets;
     sound_bytes = new byte[256 * numOfPackets * (isAdaptive ? 2 : 1)];
+    subs_bytes = new byte[256 * numOfPackets * 1];
+    m_bytes = new byte[numOfPackets];
+    b_bytes = new byte[numOfPackets];
   }
 
   /**
@@ -42,21 +48,24 @@ public class Sound {
     int rightByte = 0;
     int start = 0;
     if (isAdaptive) {
-      byte[] m_bytes = new byte[4];
+      byte[] mm = new byte[4];
       byte sign = (byte) ((buffer[1] & 0x80) != 0 ? 0xff : 0x00);
-      m_bytes[3] = sign;
-      m_bytes[2] = sign;
-      m_bytes[1] = buffer[1];
-      m_bytes[0] = buffer[0];
-      m = ByteBuffer.wrap(m_bytes).order(ByteOrder.LITTLE_ENDIAN).getInt();
+      mm[3] = sign;
+      mm[2] = sign;
+      mm[1] = buffer[1];
+      mm[0] = buffer[0];
+      m = ByteBuffer.wrap(mm).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
       sign = (byte) ((buffer[3] & 0x80) != 0 ? 0xff : 0x00);
-      byte[] b_bytes = new byte[4];
-      b_bytes[3] = sign;
-      b_bytes[2] = sign;
-      b_bytes[1] = buffer[3];
-      b_bytes[0] = buffer[2];
-      b = ByteBuffer.wrap(b_bytes).order(ByteOrder.LITTLE_ENDIAN).getInt();
+      byte[] bb = new byte[4];
+      bb[3] = sign;
+      bb[2] = sign;
+      bb[1] = buffer[3];
+      bb[0] = buffer[2];
+      b = ByteBuffer.wrap(bb).order(ByteOrder.LITTLE_ENDIAN).getInt();
+
+      m_bytes[p] = (byte) m;
+      b_bytes[p] = (byte) b;
 
       start = 4;
       int ll;
@@ -69,8 +78,12 @@ public class Sound {
 
         leftCompressedByte = (pair >>> 4) & 15;
         rightCompressedByte = pair & 15;
-        leftByte = (leftCompressedByte - 8) * b;
-        rightByte = (rightCompressedByte - 8) * b;
+        leftByte = (leftCompressedByte - 8);
+        rightByte = (rightCompressedByte - 8);
+        subs_bytes[(song_pos / 2)] = (byte) leftByte;
+        subs_bytes[(song_pos / 2) + 1] = (byte) rightByte;
+        leftByte *= b;
+        rightByte *= b;
 
         ll = prev + leftByte + m;
         prev = rightByte;
@@ -88,9 +101,13 @@ public class Sound {
         int pair = (int) buffer[i + start];
         leftCompressedByte = (pair >>> 4) & 15;
         rightCompressedByte = pair & 15;
-        leftByte = (leftCompressedByte - 8) * b;
-        rightByte = (rightCompressedByte - 8) * b;
+        leftByte = (leftCompressedByte - 8);
+        rightByte = (rightCompressedByte - 8);
         int song_pos = i * 2 + p * 256;
+        subs_bytes[song_pos] = (byte) leftByte;
+        subs_bytes[song_pos + 1] = (byte) leftByte;
+        leftByte *= b;
+        rightByte *= b;
         if (i == 0)
           sound_bytes[i] = (byte) leftByte;
         else
@@ -126,20 +143,34 @@ public class Sound {
   /**
    * Writes imageBytes to file
    *
-   * @param filename The name of the file to write the image (eg. image1.jpg)
+   * @param filename The name of the file to write the sound samples and subs (eg.
+   *                 sound1)
    */
   public void writeToFile(String filename) {
-    File file = new File(filename);
+    if (isAdaptive)
+      filename += "_AQ-DPCM";
+    else
+      filename += "_DPCM";
+    _writeToFile(filename, "Samples", sound_bytes);
+    _writeToFile(filename, "Subs", subs_bytes);
+    if (isAdaptive) {
+      _writeToFile(filename, "M", m_bytes);
+      _writeToFile(filename, "B", b_bytes);
+    }
+  }
+
+  private void _writeToFile(String filename, String type, byte[] array) {
+    File file = new File(filename + "_" + type);
     try {
       FileWriter fw = new FileWriter(file, false);
       fw.write("");
-      for (byte b : sound_bytes) {
+      for (byte b : array) {
         fw.append(String.valueOf(b) + "\n");
       }
       fw.close();
-      ITHAKI.ithakiPrint("Sound exported to " + filename);
+      ITHAKI.ithakiPrint("Sound " + type + " exported to " + filename + "_" + type);
     } catch (IOException e) {
-      ITHAKI.errorPrint("Could not write to file: " + filename);
+      ITHAKI.errorPrint("Could not write to file: " + filename + "_" + type);
       e.printStackTrace();
     }
   }

@@ -13,11 +13,11 @@ import ithaki_api.Sound;
 
 public class userApplication {
   // GLOBAL
-  static int SERVER_PORT = 38024;
-  static int CLIENT_PORT = 48024;
+  static int SERVER_PORT = 38034;
+  static int CLIENT_PORT = 48034;
   static int ECHO_CODE = 4389;
   static int IMG_CODE = 6059;
-  static int SOUND_CODE = 9758;
+  static int SOUND_CODE = 6153;
   static String resultsDir = "../results/";
   static DatagramSocket SEND_SOCKET;
   static DatagramSocket RECIEVE_SOCKET;
@@ -32,11 +32,18 @@ public class userApplication {
 
     // echo(ithaki, 2, true);
     // echo(ithaki, 30, false);
-    // images(ithaki);
+    // images(ithaki);vac userApplication.java && java userApplication
     // temperatures(ithaki);
+    sound(ithaki);
+  }
+
+  private static void sound(ITHAKI ithaki) {
     Sound aSound = ithaki.getSound(300, 1, true);
+    aSound.writeToFile(resultsDir + "song1");
+    Sound bSound = ithaki.getSound(300, 1, false);
+    bSound.writeToFile(resultsDir + "song1");
     aSound.play();
-    //aSound.writeToFile(resultsDir + "sound_file.txt");
+    bSound.play();
   }
 
   /**

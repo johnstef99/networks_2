@@ -32,7 +32,7 @@ public class ITHAKI {
     this.client_port = client_port;
     this.echo_code = new String("E" + Integer.toString(echo_code)).getBytes();
     // UDP=1024 to recieve image faster
-    this.image_code = new String("M" + Integer.toString(image_code)).getBytes();
+    this.image_code = new String("M" + Integer.toString(image_code) + " UDP=1024").getBytes();
     this.sound_code = new String("A" + Integer.toString(sound_code)).getBytes();
     setup();
     ithakiPrint("initialised");
@@ -60,7 +60,7 @@ public class ITHAKI {
     // create recieveSocket
     try {
       recieveSocket = new DatagramSocket(client_port);
-      recieveSocket.setSoTimeout(10000);
+      recieveSocket.setSoTimeout(5000);
     } catch (SocketException e) {
       errorPrint("Error creating recieveSocket");
       e.printStackTrace();
@@ -176,12 +176,17 @@ public class ITHAKI {
   /**
    *
    * @param numOfPackets number of packets between 1 and 999
-   * @param b            multiplyer
    * @param sound_type   pass 0 to get sound from generator or 1-99 to get a song
    * @param adaptive     pass true for AQ-DPCM and false for DPCM
    * @return {@link Sound}
    */
   public Sound getSound(int numOfPackets, int sound_type, boolean adaptive) {
+    if (adaptive && sound_type == 0) {
+      ithakiPrint("Ithaki can't get AQ-DPCM from frequency generator.");
+      ithakiPrint("If you want to get AQ-DPCM sound select a song from 1 to 99");
+      ithakiPrint("Changing to DPCM to continue");
+      adaptive = false;
+    }
     long startTime = System.currentTimeMillis();
     String Y = "T";
     String L = "";
@@ -209,6 +214,7 @@ public class ITHAKI {
 
     Sound sound = new Sound(adaptive, numOfPackets);
     ithakiPrint("Start getting sound packets");
+    int timeouts = 0;
     for (int p = 0; p < numOfPackets; p++) {
       if (p % 100 == 0) {
         ithakiPrint(String.valueOf(p) + " packets of " + String.valueOf(numOfPackets) + " received");
@@ -218,6 +224,11 @@ public class ITHAKI {
         sound.addPakcet(buffer, p);
       } catch (SocketTimeoutException e) {
         errorPrint("Timeout on packet num: #" + Integer.toString(p));
+        timeouts += 1;
+        if (timeouts > 3) {
+          ithakiPrint("stop getting packets after 4 timeouts");
+          break;
+        }
       } catch (IOException e) {
         errorPrint("Could not get sound packet");
         e.printStackTrace();
