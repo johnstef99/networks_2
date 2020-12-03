@@ -45,6 +45,9 @@ public class userApplication {
     vehicle(ithaki, 10);
   }
 
+  /**
+   * Getting ithaki codes from file named "codes"
+   */
   private static void getCodes() {
     File codesFile = new File("./codes");
     try {
@@ -92,83 +95,17 @@ public class userApplication {
   }
 
   /**
-   * Get vehicle packets
+   * Gets the sound samples from ithaki
    *
-   * @param ithaki  Ithaki's API instant
-   * @param runTime How many second to get packets
+   * @param ithaki
    */
-  private static void vehicle(ITHAKI ithaki, int runTime) {
-    File vehicle_packets_file = new File(resultsDir + "V" + VEHICLE_CODE + ".json");
-    try {
-      if (vehicle_packets_file.createNewFile()) {
-        System.out.println("File created: " + vehicle_packets_file.getName());
-      } else {
-        System.out.println(vehicle_packets_file.getName() + " already exist");
-      }
-      FileWriter vehicle_writer = new FileWriter(vehicle_packets_file, false);
-      vehicle_writer.write("[\n");
-      double startTime = System.currentTimeMillis();
-      System.out.println("Progress\tPacket");
-      DecimalFormat per = new DecimalFormat("#0.00");
-      for (double now = System.currentTimeMillis(); now < startTime + runTime * 1000; now = System
-          .currentTimeMillis()) {
-        VehiclePacket aPacket = ithaki.getVehiclePacket();
-        double progress = ((now - startTime) / (runTime * 1000)) * 100;
-        System.out.println(per.format(progress) + "%\t" + aPacket.toString());
-        vehicle_writer.write(String.valueOf(aPacket.toJson()) + ",\n");
-      }
-      vehicle_writer.write("]");
-      vehicle_writer.close();
-      System.out.println("100%\tGetting vehicle packets finished");
-      System.out.println("Exported to file: " + vehicle_packets_file.getName());
-      vehicle_writer.close();
-    } catch (IOException e) {
-      System.out.println("Error creating " + vehicle_packets_file.getName());
-      e.printStackTrace();
-    }
-
-  }
-
-  /**
-   * Get telemetry packets
-   *
-   * @param ithaki  Ithaki's API instant
-   * @param runTime How many second to get packets
-   */
-  private static void telemetry(ITHAKI ithaki, int runTime) {
-    File copter_packets_file = new File(resultsDir + "ITHAKICOPTER.txt");
-    try {
-      if (copter_packets_file.createNewFile()) {
-        System.out.println("File created: " + copter_packets_file.getName());
-      } else {
-        System.out.println(copter_packets_file.getName() + " already exist");
-      }
-      FileWriter echo_writer = new FileWriter(copter_packets_file, false);
-      double startTime = System.currentTimeMillis();
-      System.out.println("Progress\tPacket");
-      DecimalFormat per = new DecimalFormat("#0.00");
-      for (double now = System.currentTimeMillis(); now < startTime + runTime * 1000; now = System
-          .currentTimeMillis()) {
-        IthakiCopterPacket aPacket = ithaki.getTelemetry();
-        double progress = ((now - startTime) / (runTime * 1000)) * 100;
-        System.out.println(per.format(progress) + "%\t" + aPacket.toString());
-        echo_writer.write(String.valueOf(aPacket.toString()) + "\n");
-      }
-      System.out.println("100%\tGetting telemetry packets finished");
-      System.out.println("Exported to file: " + copter_packets_file.getName());
-      echo_writer.close();
-    } catch (IOException e) {
-      System.out.println("Error creating " + copter_packets_file.getName());
-      e.printStackTrace();
-    }
-
-  }
-
   private static void sound(ITHAKI ithaki) {
     Sound aSound = ithaki.getSound(300, 1, true);
     aSound.writeToFile(resultsDir + "song1");
     Sound bSound = ithaki.getSound(300, 1, false);
     bSound.writeToFile(resultsDir + "song1");
+    Sound gen = ithaki.getSound(300, 0, false);
+    gen.writeToFile(resultsDir + "generator");
     aSound.play();
     bSound.play();
   }
@@ -211,6 +148,11 @@ public class userApplication {
     }
   }
 
+  /**
+   * Gets images from both cameras
+   *
+   * @param ithaki
+   */
   private static void images(ITHAKI ithaki) {
     Image e1 = ithaki.getImage(CAMERAS.FIX);
     e1.writeToFile(resultsDir + "E1.jpg");
@@ -218,6 +160,11 @@ public class userApplication {
     e2.writeToFile(resultsDir + "E2.jpg");
   }
 
+  /**
+   * Get temperature from the only working sensor 0
+   *
+   * @param ithaki
+   */
   private static void temperatures(ITHAKI ithaki) {
     Packet temPacket = ithaki.getPacket(true, 0);
     File temp_file = new File(resultsDir + ECHO_CODE + "_TEMP.txt");
@@ -234,5 +181,77 @@ public class userApplication {
       System.out.println("Error creating " + temp_file.getName());
       e.printStackTrace();
     }
+  }
+
+  /**
+   * Get telemetry packets
+   *
+   * @param ithaki  Ithaki's API instant
+   * @param runTime How many second to get packets
+   */
+  private static void telemetry(ITHAKI ithaki, int runTime) {
+    File copter_packets_file = new File(resultsDir + "ITHAKICOPTER.txt");
+    try {
+      if (copter_packets_file.createNewFile()) {
+        System.out.println("File created: " + copter_packets_file.getName());
+      } else {
+        System.out.println(copter_packets_file.getName() + " already exist");
+      }
+      FileWriter echo_writer = new FileWriter(copter_packets_file, false);
+      double startTime = System.currentTimeMillis();
+      System.out.println("Progress\tPacket");
+      DecimalFormat per = new DecimalFormat("#0.00");
+      for (double now = System.currentTimeMillis(); now < startTime + runTime * 1000; now = System
+          .currentTimeMillis()) {
+        IthakiCopterPacket aPacket = ithaki.getTelemetry();
+        double progress = ((now - startTime) / (runTime * 1000)) * 100;
+        System.out.println(per.format(progress) + "%\t" + aPacket.toString());
+        echo_writer.write(String.valueOf(aPacket.toString()) + "\n");
+      }
+      System.out.println("100%\tGetting telemetry packets finished");
+      System.out.println("Exported to file: " + copter_packets_file.getName());
+      echo_writer.close();
+    } catch (IOException e) {
+      System.out.println("Error creating " + copter_packets_file.getName());
+      e.printStackTrace();
+    }
+  }
+
+  /**
+   * Get vehicle packets
+   *
+   * @param ithaki  Ithaki's API instant
+   * @param runTime How many second to get packets
+   */
+  private static void vehicle(ITHAKI ithaki, int runTime) {
+    File vehicle_packets_file = new File(resultsDir + "V" + VEHICLE_CODE + ".json");
+    try {
+      if (vehicle_packets_file.createNewFile()) {
+        System.out.println("File created: " + vehicle_packets_file.getName());
+      } else {
+        System.out.println(vehicle_packets_file.getName() + " already exist");
+      }
+      FileWriter vehicle_writer = new FileWriter(vehicle_packets_file, false);
+      vehicle_writer.write("[\n");
+      double startTime = System.currentTimeMillis();
+      System.out.println("Progress\tPacket");
+      DecimalFormat per = new DecimalFormat("#0.00");
+      for (double now = System.currentTimeMillis(); now < startTime + runTime * 1000; now = System
+          .currentTimeMillis()) {
+        VehiclePacket aPacket = ithaki.getVehiclePacket();
+        double progress = ((now - startTime) / (runTime * 1000)) * 100;
+        System.out.println(per.format(progress) + "%\t" + aPacket.toString());
+        vehicle_writer.write(String.valueOf(aPacket.toJson()) + ",\n");
+      }
+      vehicle_writer.write("]");
+      vehicle_writer.close();
+      System.out.println("100%\tGetting vehicle packets finished");
+      System.out.println("Exported to file: " + vehicle_packets_file.getName());
+      vehicle_writer.close();
+    } catch (IOException e) {
+      System.out.println("Error creating " + vehicle_packets_file.getName());
+      e.printStackTrace();
+    }
+
   }
 }
