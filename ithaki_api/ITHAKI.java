@@ -16,8 +16,10 @@ public class ITHAKI {
   private byte[] echo_code;
   private byte[] image_code;
   private byte[] sound_code;
+  private byte[] vehicle_code;
   private DatagramSocket sendSocket;
   private DatagramSocket recieveSocket;
+  private DatagramSocket copterSocket;
 
   /**
    * API to communicate with Ithaki
@@ -27,13 +29,14 @@ public class ITHAKI {
    * @param echo_code
    * @param image_code
    */
-  public ITHAKI(int server_port, int client_port, int echo_code, int image_code, int sound_code) {
+  public ITHAKI(int server_port, int client_port, int echo_code, int image_code, int sound_code, int vehicle_code) {
     this.server_port = server_port;
     this.client_port = client_port;
     this.echo_code = new String("E" + Integer.toString(echo_code)).getBytes();
     // UDP=1024 to recieve image faster
     this.image_code = new String("M" + Integer.toString(image_code) + " UDP=1024").getBytes();
     this.sound_code = new String("A" + Integer.toString(sound_code)).getBytes();
+    this.vehicle_code = new String("V" + Integer.toString(vehicle_code)).getBytes();
     setup();
     ithakiPrint("initialised");
   }
@@ -61,6 +64,14 @@ public class ITHAKI {
     try {
       recieveSocket = new DatagramSocket(client_port);
       recieveSocket.setSoTimeout(5000);
+    } catch (SocketException e) {
+      errorPrint("Error creating recieveSocket");
+      e.printStackTrace();
+    }
+    // create copterSocket
+    try {
+      copterSocket = new DatagramSocket(48078);
+      copterSocket.setSoTimeout(5000);
     } catch (SocketException e) {
       errorPrint("Error creating recieveSocket");
       e.printStackTrace();
@@ -238,6 +249,101 @@ public class ITHAKI {
     long elapsedTime = System.currentTimeMillis() - startTime;
     sound.responseTime = elapsedTime;
     return sound;
+  }
+
+  /**
+   * Remeber to open ithakicopter's jar file before trying to get pakcets that
+   * cost me 1 hour of my life
+   *
+   * @return {@link IthakiCopterPacket}
+   */
+  public IthakiCopterPacket getTelemetry() {
+    byte[] buffer = new byte[2048];
+    DatagramPacket recievePacket = new DatagramPacket(buffer, buffer.length);
+    int timeouts = 0;
+    long startTime = System.currentTimeMillis();
+    while (true) {
+      try {
+        copterSocket.receive(recievePacket);
+        break;
+      } catch (SocketTimeoutException e) {
+        errorPrint("Timeout");
+        timeouts += 1;
+        if (timeouts == 4) {
+          ithakiPrint("Stop trying to get packets from ithakicopter");
+          ithakiPrint("Did you open ithakicopter's jar file???");
+          ithakiPrint("Also ithakicopter send packets to port 48078");
+        }
+      } catch (IOException e) {
+        errorPrint("Could not get echo packet");
+        e.printStackTrace();
+        System.exit(1);
+      }
+    }
+    long elapsedTime = System.currentTimeMillis() - startTime;
+    IthakiCopterPacket packet = new IthakiCopterPacket(new String(buffer, 0, recievePacket.getLength()), elapsedTime);
+    recieveSocket.close();
+    return packet;
+  }
+
+  /**
+   *
+   * @return {@link VehiclePacket}
+   */
+  public VehiclePacket getVehicle() {
+    byte[] code = echo_code;
+    String[] pid = { "1F", "0F", "11", "0C", "0D", "05" };
+    VehiclePacket vehiclePacket = new VehiclePacket();
+    for (String p : pid) {
+      code = new String(new String(vehicle_code) + "OBD=01 " + p + "\r").getBytes();
+      DatagramPacket sendPacket = new DatagramPacket(code, code.length, server_address, server_port);
+      try {
+        ithakiPrint(new String(code).replaceAll("\r", "") + " sent");
+        sendSocket.send(sendPacket);
+      } catch (IOException e) {
+        errorPrint("Could not send echo packet");
+        e.printStackTrace();
+      }
+      byte[] buffer = new byte[2048];
+      DatagramPacket recievePacket = new DatagramPacket(buffer, buffer.length);
+      while (true) {
+        try {
+          recieveSocket.receive(recievePacket);
+          break;
+        } catch (SocketTimeoutException e) {
+          errorPrint("Timeout");
+        } catch (IOException e) {
+          errorPrint("Could not get echo packet");
+          e.printStackTrace();
+          System.exit(1);
+        }
+      }
+      String data = new String(buffer, 0, recievePacket.getLength()).substring(6);
+      switch (p) {
+        case "1F":
+          vehiclePacket.setEngine_run_time(data);
+          break;
+        case "0F":
+          vehiclePacket.setIntake_air_temperature(data);
+          break;
+        case "11":
+          vehiclePacket.setThrottle_position(data);
+          break;
+        case "0C":
+          vehiclePacket.setEngine_rpm(data);
+          break;
+        case "0D":
+          vehiclePacket.setVehicle_speed(data);
+          break;
+        case "05":
+          vehiclePacket.setCoolant_temperature(data);
+          break;
+        default:
+          errorPrint("zhe shi shenme?");
+          break;
+      }
+    }
+    return vehiclePacket;
   }
 
   // beautify
