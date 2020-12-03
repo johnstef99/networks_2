@@ -29,14 +29,15 @@ public class ITHAKI {
    * @param echo_code
    * @param image_code
    */
-  public ITHAKI(int server_port, int client_port, int echo_code, int image_code, int sound_code, int vehicle_code) {
+  public ITHAKI(int server_port, int client_port, String echo_code, String image_code, String sound_code,
+      String vehicle_code) {
     this.server_port = server_port;
     this.client_port = client_port;
-    this.echo_code = new String("E" + Integer.toString(echo_code)).getBytes();
+    this.echo_code = echo_code.getBytes();
     // UDP=1024 to recieve image faster
-    this.image_code = new String("M" + Integer.toString(image_code) + " UDP=1024").getBytes();
-    this.sound_code = new String("A" + Integer.toString(sound_code)).getBytes();
-    this.vehicle_code = new String("V" + Integer.toString(vehicle_code)).getBytes();
+    this.image_code = (image_code + " UDP=1024").getBytes();
+    this.sound_code = sound_code.getBytes();
+    this.vehicle_code = vehicle_code.getBytes();
     setup();
     ithakiPrint("initialised");
   }
@@ -282,7 +283,6 @@ public class ITHAKI {
     }
     long elapsedTime = System.currentTimeMillis() - startTime;
     IthakiCopterPacket packet = new IthakiCopterPacket(new String(buffer, 0, recievePacket.getLength()), elapsedTime);
-    recieveSocket.close();
     return packet;
   }
 
@@ -290,7 +290,7 @@ public class ITHAKI {
    *
    * @return {@link VehiclePacket}
    */
-  public VehiclePacket getVehicle() {
+  public VehiclePacket getVehiclePacket() {
     byte[] code = echo_code;
     String[] pid = { "1F", "0F", "11", "0C", "0D", "05" };
     VehiclePacket vehiclePacket = new VehiclePacket();
@@ -298,7 +298,6 @@ public class ITHAKI {
       code = new String(new String(vehicle_code) + "OBD=01 " + p + "\r").getBytes();
       DatagramPacket sendPacket = new DatagramPacket(code, code.length, server_address, server_port);
       try {
-        ithakiPrint(new String(code).replaceAll("\r", "") + " sent");
         sendSocket.send(sendPacket);
       } catch (IOException e) {
         errorPrint("Could not send echo packet");

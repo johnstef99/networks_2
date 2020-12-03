@@ -49,4 +49,10 @@ public class VehiclePacket {
         + ", coolant_temperature=" + coolant_temperature;
   }
 
+  public String toJson() {
+    return "{\"engine_run_time\":" + engine_rpm + ", \"intake_air_temperature\":" + intake_air_temperature
+        + ", \"throttle_position\":" + throttle_position + ", \"engine_rpm\":" + engine_rpm + ", \"vehicle_speed\":"
+        + vehicle_speed + ", \"coolant_temperature\":" + coolant_temperature + "}";
+  }
+
 }
