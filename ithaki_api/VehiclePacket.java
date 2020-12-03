@@ -1,6 +1,10 @@
 
 package ithaki_api;
 
+/**
+ * Pass the data you get from ithaki and this class will convert them from hex
+ * and store them
+ */
 public class VehiclePacket {
   public int engine_run_time;
   public int intake_air_temperature;

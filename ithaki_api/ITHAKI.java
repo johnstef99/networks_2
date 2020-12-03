@@ -120,8 +120,9 @@ public class ITHAKI {
   }
 
   /**
+   * Returns an image from the chosen camera
    *
-   * @param camera chouse a camera from {@link CAMERAS} to use
+   * @param camera choose a camera from {@link CAMERAS} to use
    * @return {@link Image}
    */
   public Image getImage(CAMERAS camera) {
@@ -186,6 +187,7 @@ public class ITHAKI {
   }
 
   /**
+   * Returns a sound from ithaki
    *
    * @param numOfPackets number of packets between 1 and 999
    * @param sound_type   pass 0 to get sound from generator or 1-99 to get a song
@@ -253,7 +255,7 @@ public class ITHAKI {
   }
 
   /**
-   * Remeber to open ithakicopter's jar file before trying to get pakcets that
+   * Remember to open ithakicopter's jar file before trying to get packets that
    * cost me 1 hour of my life
    *
    * @return {@link IthakiCopterPacket}
@@ -287,6 +289,7 @@ public class ITHAKI {
   }
 
   /**
+   * Returns a packet with all the info from ithaki's vehicle
    *
    * @return {@link VehiclePacket}
    */

@@ -35,8 +35,9 @@ public class Sound {
   }
 
   /**
+   * Add packet to sound
    *
-   * @param buffer array of bytes recieved
+   * @param buffer array of bytes received
    * @param p      number of packet
    */
   public void addPakcet(byte[] buffer, int p) {
@@ -118,6 +119,9 @@ public class Sound {
     }
   }
 
+  /**
+   * Plays the sound
+   */
   public void play() {
     AudioFormat af = new AudioFormat(8000, (isAdaptive ? 16 : 8), 1, true, false);
     try {

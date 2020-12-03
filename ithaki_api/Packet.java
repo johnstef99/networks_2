@@ -1,5 +1,8 @@
 package ithaki_api;
 
+/**
+ * just a class for temperature
+ */
 class Temperature {
   public final int sensor;
   public final String temperature;
