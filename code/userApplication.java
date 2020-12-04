@@ -36,16 +36,15 @@ public class userApplication {
     getCodes();
     ITHAKI ithaki = new ITHAKI(SERVER_PORT, CLIENT_PORT, ECHO_CODE, IMG_CODE, SOUND_CODE, VEHICLE_CODE);
 
-    // echo(ithaki, 4 * 60, true);
-    // echo(ithaki, 4 * 60, false);
-    // images(ithaki);
-    // temperatures(ithaki);
+    echo(ithaki, 4 * 60, true);
+    echo(ithaki, 4 * 60, false);
+    images(ithaki);
+    temperatures(ithaki);
     sound(ithaki);
-    // System.out.println("Open ithaki copter jar file and press a key to
-    // continue..");
-    // System.in.read();
-    // telemetry(ithaki, 60);
-    // vehicle(ithaki, 4 * 60);
+    System.out.println("Open ithaki copter jar file and press a key to continue..");
+    System.in.read();
+    telemetry(ithaki, 60);
+    vehicle(ithaki, 4 * 60);
   }
 
   /**
@@ -103,17 +102,17 @@ public class userApplication {
    * @param ithaki
    */
   private static void sound(ITHAKI ithaki) {
-    // Sound song1_aq = ithaki.getSound(300, 1, true);
-    // song1_aq.writeToFile(resultsDir + "song1");
+    Sound song1_aq = ithaki.getSound(300, 1, true);
+    song1_aq.writeToFile(resultsDir + "song1");
     Sound song2_aq = ithaki.getSound(300, 2, true);
     song2_aq.writeToFile(resultsDir + "song2");
     song2_aq.play();
-    // Sound song1 = ithaki.getSound(300, 1, false);
-    // song1.writeToFile(resultsDir + "song1");
-    // Sound gen = ithaki.getSound(300, 0, false);
-    // gen.writeToFile(resultsDir + "generator");
-    // song1_aq.play();
-    // song1.play();
+    Sound song1 = ithaki.getSound(300, 1, false);
+    song1.writeToFile(resultsDir + "song1");
+    Sound gen = ithaki.getSound(300, 0, false);
+    gen.writeToFile(resultsDir + "generator");
+    song1_aq.play();
+    song1.play();
   }
 
   /**

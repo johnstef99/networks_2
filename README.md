@@ -1,11 +1,13 @@
 # Δίκτυα 2 - Δικτυακός προγραμματισμός : Java network socket programming - ΑΠΘ
-## ithaki_api
-API to get data from ithaki easy.
 
-Create an ITHAKI object, then you can get an echo packet just by running object.getPacket(read comments for passing args) this will return aPacket 
-object.
+Προσπάθησα να
+φτιάξω ένα είδους API (Application Programming Interface) για την Ιθάκη που
+έχει κλάσεις για κάθε πληροφορία που μπορείς να ζητήσεις. Για παράδειγμα
+μπορείτε να δείτε την κλάση **VehiclePacket** όπου δεν μας ενδιαφέρει να
+δούμε την απάντηση από την Ιθάκη αλλά πρέπει να κάνουμε parse το String του
+πακέτου σύμφωνα με το OBD-II για να πάρουμε τις πληροφορίες του οχήματος.
 
-With this package you get the classes Packet, Image, Sound, IthakiCopterPacket, VehiclePacket. These will help you access the data you need.
-
-## userApplication
-Uses ithaki_api to get the data needed for the report
+Στο **IHAKI API** θα βρείτε τις συναρτήσεις **getPacket,
+getImage, getSound, getTelemetry** και **getVehiclePacket** όλες αυτές
+επιστρέφουν την custom class που έχει φτιαχτεί για το κάθε κομμάτι και
+όχι την απάντηση της Ιθάκης.
