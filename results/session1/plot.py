@@ -2,6 +2,7 @@ import json
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.pyplot import figure
+import statistics
 
 
 echo_delay = np.loadtxt('./E4831_DELAY.txt')
@@ -23,10 +24,17 @@ dpi = 100
 figure(num=None, figsize=(12, 6), dpi=dpi, facecolor='w', edgecolor='k')
 g1_data = echo_delay
 total_packets = len(g1_data)
+total_delay = 0
+for data in g1_data:
+    total_delay += data
+g1_mean = total_delay/total_packets
+g1_mean_array = [g1_mean] * total_packets
 plt.title("G1")
 plt.xlabel("packet num (total=" + str(total_packets) + ")")
 plt.ylabel("response time in ms")
 plt.plot(g1_data)
+plt.plot(g1_mean_array, label='average delay='+str(round(g1_mean))+'ms')
+plt.legend()
 plt.savefig(output_dir+'G1.png', transparent=True)
 plt.close()
 
@@ -53,10 +61,17 @@ plt.close()
 figure(num=None, figsize=(12, 6), dpi=dpi, facecolor='w', edgecolor='k')
 g3_data = echo_no_delay
 total_packets = len(g3_data)
+total_delay = 0
+for data in g3_data:
+    total_delay += data
+g3_mean = total_delay/total_packets
+g3_mean_array = [g3_mean] * total_packets
 plt.title("G3")
 plt.xlabel("packet num (total=" + str(total_packets) + ")")
 plt.ylabel("response time in ms")
 plt.plot(g3_data)
+plt.plot(g3_mean_array, label='average delay='+str(round(g3_mean))+'ms')
+plt.legend()
 plt.savefig(output_dir+'G3.png', transparent=True)
 plt.close()
 
