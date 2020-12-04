@@ -1,1 +1,2 @@
-PSTART 03-12-2020 09:10:14 T00 03-12 07:02 +21 C PSTOP with response time = 38ms | Sensor 0: +21°C
+PSTART 03-12-2020 09:10:14 T00 03-12 07:02 +21 C PSTOP
+with response time = 38ms | Sensor 0: +21°C
