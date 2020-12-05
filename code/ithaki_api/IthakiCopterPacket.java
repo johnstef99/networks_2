@@ -29,8 +29,8 @@ public class IthakiCopterPacket {
   }
 
   public String toJson() {
-    return "{" + "LMOTOR:" + Integer.toString(lmotor) + ",RMOTOR:" + Integer.toString(rmotor) + ",ALTITUDE:"
-        + Integer.toString(altitude) + ",TEMPERATURE:" + Float.toString(temperature) + ",PRESSURE:"
+    return "{" + "\"LMOTOR\":" + Integer.toString(lmotor) + ",\"RMOTOR\":" + Integer.toString(rmotor) + ",\"ALTITUDE\":"
+        + Integer.toString(altitude) + ",\"TEMPERATURE\":" + Float.toString(temperature) + ",\"PRESSURE\":"
         + Float.toString(pressure) + "}";
   }
 
