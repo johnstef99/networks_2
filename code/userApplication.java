@@ -43,19 +43,17 @@ public class userApplication {
     System.out.println("===========================\n");
 
     getCodes();
-    ITHAKI ithaki = new ITHAKI(SERVER_PORT, CLIENT_PORT, ECHO_CODE,
-        IMG_CODE, SOUND_CODE, VEHICLE_CODE);
+    ITHAKI ithaki = new ITHAKI(SERVER_PORT, CLIENT_PORT, ECHO_CODE, IMG_CODE, SOUND_CODE, VEHICLE_CODE);
 
-    echo(ithaki, 4 * 60, true);
-    echo(ithaki, 4 * 60, false);
-    images(ithaki);
-    temperatures(ithaki);
-    sound(ithaki);
-    System.out.println("Open ithaki copter jar file and press a key to "
-        +"continue..");
-    System.in.read();
+    //echo(ithaki, 4 * 60, true);
+    //echo(ithaki, 4 * 60, false);
+    //images(ithaki);
+    //temperatures(ithaki);
+    //sound(ithaki);
+    //System.out.println("Open ithaki copter jar file and press a key to " + "continue..");
+    //System.in.read();
     telemetry(ithaki, 60);
-    vehicle(ithaki, 4 * 60);
+    //vehicle(ithaki, 4 * 60);
   }
 
   /**
@@ -151,9 +149,8 @@ public class userApplication {
       double startTime = System.currentTimeMillis();
       System.out.println("Progress\tPacket");
       DecimalFormat per = new DecimalFormat("#0.00");
-      for (double now = System.currentTimeMillis();
-          now < startTime + runTime * 1000;
-          now = System.currentTimeMillis()) {
+      for (double now = System.currentTimeMillis(); now < startTime + runTime * 1000; now = System
+          .currentTimeMillis()) {
         Packet aPacket = ithaki.getPacket(withDelay, -1);
         double progress = ((now - startTime) / (runTime * 1000)) * 100;
         if (aPacket != null) {
@@ -212,7 +209,7 @@ public class userApplication {
    * @param runTime How many second to get packets
    */
   private static void telemetry(ITHAKI ithaki, int runTime) {
-    File copter_packets_file = new File(resultsDir + "ITHAKICOPTER.txt");
+    File copter_packets_file = new File(resultsDir + "ITHAKICOPTER.json");
     try {
       if (copter_packets_file.createNewFile()) {
         System.out.println("File created: " + copter_packets_file.getName());
@@ -220,19 +217,20 @@ public class userApplication {
         System.out.println(copter_packets_file.getName() + " already exist");
       }
       FileWriter echo_writer = new FileWriter(copter_packets_file, false);
+      echo_writer.write("[\n");
       double startTime = System.currentTimeMillis();
       System.out.println("Progress\tPacket");
       DecimalFormat per = new DecimalFormat("#0.00");
-      for (double now = System.currentTimeMillis();
-          now < startTime + runTime * 1000;
-          now = System.currentTimeMillis()) {
+      for (double now = System.currentTimeMillis(); now < startTime + runTime * 1000; now = System
+          .currentTimeMillis()) {
         IthakiCopterPacket aPacket = ithaki.getTelemetry();
         double progress = ((now - startTime) / (runTime * 1000)) * 100;
         System.out.println(per.format(progress) + "%\t" + aPacket.toString());
-        echo_writer.write(aPacket.toJson() + "\n");
+        echo_writer.write(aPacket.toJson() + ",\n");
       }
       System.out.println("100%\tGetting telemetry packets finished");
       System.out.println("Exported to file: " + copter_packets_file.getName());
+      echo_writer.write("\n]");
       echo_writer.close();
     } catch (IOException e) {
       System.out.println("Error creating " + copter_packets_file.getName());
@@ -247,8 +245,7 @@ public class userApplication {
    * @param runTime How many second to get packets
    */
   private static void vehicle(ITHAKI ithaki, int runTime) {
-    File vehicle_packets_file = new File(resultsDir + "V" + VEHICLE_CODE
-        + ".json");
+    File vehicle_packets_file = new File(resultsDir + "V" + VEHICLE_CODE + ".json");
     try {
       if (vehicle_packets_file.createNewFile()) {
         System.out.println("File created: " + vehicle_packets_file.getName());
@@ -260,9 +257,8 @@ public class userApplication {
       double startTime = System.currentTimeMillis();
       System.out.println("Progress\tPacket");
       DecimalFormat per = new DecimalFormat("#0.00");
-      for (double now = System.currentTimeMillis();
-          now < startTime + runTime * 1000;
-          now = System.currentTimeMillis()) {
+      for (double now = System.currentTimeMillis(); now < startTime + runTime * 1000; now = System
+          .currentTimeMillis()) {
         VehiclePacket aPacket = ithaki.getVehiclePacket();
         double progress = ((now - startTime) / (runTime * 1000)) * 100;
         System.out.println(per.format(progress) + "%\t" + aPacket.toString());
