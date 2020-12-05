@@ -1,3 +1,12 @@
+
+/**
+ * Αυτή η εφαρμογή χρησιμοποιεί το ITHAKI API που έφτιαξα.Εδώ απλά γίνονται
+ * κάποια loops για τα χρονικά διαστήματα που ζητάει η εργασία.
+ *
+ * Also check out the simple shell script I made for getting codes from Ithaki
+ *
+ * @see <a href="https://github.com/johnstef99/networks_2/">GitHub</a>
+ * */
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -23,7 +32,7 @@ public class userApplication {
   static String IMG_CODE;
   static String SOUND_CODE;
   static String VEHICLE_CODE;
-  static String resultsDir = "../results/";
+  static String resultsDir = "../results/session2/";
   static DatagramSocket SEND_SOCKET;
   static DatagramSocket RECIEVE_SOCKET;
   static InetAddress SERVER_ADDRESS;
@@ -34,14 +43,16 @@ public class userApplication {
     System.out.println("===========================\n");
 
     getCodes();
-    ITHAKI ithaki = new ITHAKI(SERVER_PORT, CLIENT_PORT, ECHO_CODE, IMG_CODE, SOUND_CODE, VEHICLE_CODE);
+    ITHAKI ithaki = new ITHAKI(SERVER_PORT, CLIENT_PORT, ECHO_CODE,
+        IMG_CODE, SOUND_CODE, VEHICLE_CODE);
 
     echo(ithaki, 4 * 60, true);
     echo(ithaki, 4 * 60, false);
     images(ithaki);
     temperatures(ithaki);
     sound(ithaki);
-    System.out.println("Open ithaki copter jar file and press a key to continue..");
+    System.out.println("Open ithaki copter jar file and press a key to "
+        +"continue..");
     System.in.read();
     telemetry(ithaki, 60);
     vehicle(ithaki, 4 * 60);
@@ -102,17 +113,20 @@ public class userApplication {
    * @param ithaki
    */
   private static void sound(ITHAKI ithaki) {
-    Sound song1_aq = ithaki.getSound(300, 1, true);
-    song1_aq.writeToFile(resultsDir + "song1");
-    Sound song2_aq = ithaki.getSound(300, 2, true);
-    song2_aq.writeToFile(resultsDir + "song2");
+    Sound song1_aq = ithaki.getSound(300, 3, true);
+    song1_aq.writeToFile(resultsDir + "song3");
+    song1_aq.play();
+
+    Sound song2_aq = ithaki.getSound(300, 4, true);
+    song2_aq.writeToFile(resultsDir + "song4");
     song2_aq.play();
-    Sound song1 = ithaki.getSound(300, 1, false);
-    song1.writeToFile(resultsDir + "song1");
+
+    Sound song1 = ithaki.getSound(300, 3, false);
+    song1.writeToFile(resultsDir + "song3");
+    song1.play();
+
     Sound gen = ithaki.getSound(300, 0, false);
     gen.writeToFile(resultsDir + "generator");
-    song1_aq.play();
-    song1.play();
   }
 
   /**
@@ -137,12 +151,15 @@ public class userApplication {
       double startTime = System.currentTimeMillis();
       System.out.println("Progress\tPacket");
       DecimalFormat per = new DecimalFormat("#0.00");
-      for (double now = System.currentTimeMillis(); now < startTime + runTime * 1000; now = System
-          .currentTimeMillis()) {
+      for (double now = System.currentTimeMillis();
+          now < startTime + runTime * 1000;
+          now = System.currentTimeMillis()) {
         Packet aPacket = ithaki.getPacket(withDelay, -1);
         double progress = ((now - startTime) / (runTime * 1000)) * 100;
-        System.out.println(per.format(progress) + "%\t" + aPacket.toString());
-        echo_writer.write(String.valueOf(aPacket.responseTime) + "\n");
+        if (aPacket != null) {
+          System.out.println(per.format(progress) + "%\t" + aPacket.toString());
+          echo_writer.write(String.valueOf(aPacket.responseTime) + "\n");
+        }
       }
       System.out.println("100%\tGetting echo packets finished");
       System.out.println("Exported to file: " + echo_packets_file.getName());
@@ -206,8 +223,9 @@ public class userApplication {
       double startTime = System.currentTimeMillis();
       System.out.println("Progress\tPacket");
       DecimalFormat per = new DecimalFormat("#0.00");
-      for (double now = System.currentTimeMillis(); now < startTime + runTime * 1000; now = System
-          .currentTimeMillis()) {
+      for (double now = System.currentTimeMillis();
+          now < startTime + runTime * 1000;
+          now = System.currentTimeMillis()) {
         IthakiCopterPacket aPacket = ithaki.getTelemetry();
         double progress = ((now - startTime) / (runTime * 1000)) * 100;
         System.out.println(per.format(progress) + "%\t" + aPacket.toString());
@@ -229,7 +247,8 @@ public class userApplication {
    * @param runTime How many second to get packets
    */
   private static void vehicle(ITHAKI ithaki, int runTime) {
-    File vehicle_packets_file = new File(resultsDir + "V" + VEHICLE_CODE + ".json");
+    File vehicle_packets_file = new File(resultsDir + "V" + VEHICLE_CODE
+        + ".json");
     try {
       if (vehicle_packets_file.createNewFile()) {
         System.out.println("File created: " + vehicle_packets_file.getName());
@@ -241,8 +260,9 @@ public class userApplication {
       double startTime = System.currentTimeMillis();
       System.out.println("Progress\tPacket");
       DecimalFormat per = new DecimalFormat("#0.00");
-      for (double now = System.currentTimeMillis(); now < startTime + runTime * 1000; now = System
-          .currentTimeMillis()) {
+      for (double now = System.currentTimeMillis();
+          now < startTime + runTime * 1000;
+          now = System.currentTimeMillis()) {
         VehiclePacket aPacket = ithaki.getVehiclePacket();
         double progress = ((now - startTime) / (runTime * 1000)) * 100;
         System.out.println(per.format(progress) + "%\t" + aPacket.toString());

@@ -82,7 +82,7 @@ public class ITHAKI {
   /**
    * @param withDelay Whether to have delay or not between packets
    * @param sensor    pass -1 to not get temperature info or pass 0-7
-   * @return {@link Packet}
+   * @return {@link Packet} or null if you get a timeout
    */
   public Packet getPacket(boolean withDelay, int sensor) {
     byte[] code = echo_code;
@@ -97,7 +97,7 @@ public class ITHAKI {
       sendSocket.send(sendPacket);
     } catch (IOException e) {
       errorPrint("Could not send echo packet");
-      e.printStackTrace();
+      return null;
     }
     byte[] buffer = new byte[2048];
     DatagramPacket recievePacket = new DatagramPacket(buffer, buffer.length);
@@ -108,6 +108,13 @@ public class ITHAKI {
         break;
       } catch (SocketTimeoutException e) {
         errorPrint("Timeout");
+        ithakiPrint("Pausing for 5sec");
+        try {
+          Thread.sleep(5000);
+        } catch (InterruptedException e1) {
+          e1.printStackTrace();
+        }
+        return null;
       } catch (IOException e) {
         errorPrint("Could not get echo packet");
         e.printStackTrace();
@@ -175,6 +182,13 @@ public class ITHAKI {
           break;
       } catch (SocketTimeoutException e) {
         errorPrint("Timeout");
+        ithakiPrint("Pausing for 5sec");
+        try {
+          Thread.sleep(5000);
+        } catch (InterruptedException e1) {
+          e1.printStackTrace();
+        }
+        return getImage(camera);
       } catch (IOException e) {
         errorPrint("Could not get image packet");
         e.printStackTrace();
@@ -297,8 +311,8 @@ public class ITHAKI {
     byte[] code = echo_code;
     String[] pid = { "1F", "0F", "11", "0C", "0D", "05" };
     VehiclePacket vehiclePacket = new VehiclePacket();
-    for (String p : pid) {
-      code = new String(new String(vehicle_code) + "OBD=01 " + p + "\r").getBytes();
+    for (int i = 0; i < pid.length; i++) {
+      code = new String(new String(vehicle_code) + "OBD=01 " + pid[i] + "\r").getBytes();
       DatagramPacket sendPacket = new DatagramPacket(code, code.length, server_address, server_port);
       try {
         sendSocket.send(sendPacket);
@@ -311,38 +325,47 @@ public class ITHAKI {
       while (true) {
         try {
           recieveSocket.receive(recievePacket);
+          String data = new String(buffer, 0, recievePacket.getLength()).substring(6);
+          switch (pid[i]) {
+            case "1F":
+              vehiclePacket.setEngine_run_time(data);
+              break;
+            case "0F":
+              vehiclePacket.setIntake_air_temperature(data);
+              break;
+            case "11":
+              vehiclePacket.setThrottle_position(data);
+              break;
+            case "0C":
+              vehiclePacket.setEngine_rpm(data);
+              break;
+            case "0D":
+              vehiclePacket.setVehicle_speed(data);
+              break;
+            case "05":
+              vehiclePacket.setCoolant_temperature(data);
+              break;
+            default:
+              errorPrint("zhe shi shenme?");
+              break;
+          }
           break;
         } catch (SocketTimeoutException e) {
-          errorPrint("Timeout");
+          errorPrint("Timeout on " + new String(code).replaceAll("\r", ""));
+          ithakiPrint("Going to ask Ithaki for the same packet");
+          ithakiPrint("Pausing for 5sec");
+          try {
+            Thread.sleep(5000);
+          } catch (InterruptedException e1) {
+            e1.printStackTrace();
+          }
+          i -= 1; //to get the same info
+          break;
         } catch (IOException e) {
           errorPrint("Could not get echo packet");
           e.printStackTrace();
           System.exit(1);
         }
-      }
-      String data = new String(buffer, 0, recievePacket.getLength()).substring(6);
-      switch (p) {
-        case "1F":
-          vehiclePacket.setEngine_run_time(data);
-          break;
-        case "0F":
-          vehiclePacket.setIntake_air_temperature(data);
-          break;
-        case "11":
-          vehiclePacket.setThrottle_position(data);
-          break;
-        case "0C":
-          vehiclePacket.setEngine_rpm(data);
-          break;
-        case "0D":
-          vehiclePacket.setVehicle_speed(data);
-          break;
-        case "05":
-          vehiclePacket.setCoolant_temperature(data);
-          break;
-        default:
-          errorPrint("zhe shi shenme?");
-          break;
       }
     }
     return vehiclePacket;
