@@ -1,0 +1,2539 @@
+[
+  {
+    "engine_run_time": 749.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 16.0,
+    "engine_rpm": 749.0,
+    "vehicle_speed": 5,
+    "coolant_temperature": 69
+  },
+  {
+    "engine_run_time": 1051.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 17.0,
+    "engine_rpm": 1051.0,
+    "vehicle_speed": 7,
+    "coolant_temperature": 69
+  },
+  {
+    "engine_run_time": 1837.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 19.0,
+    "engine_rpm": 1837.0,
+    "vehicle_speed": 13,
+    "coolant_temperature": 70
+  },
+  {
+    "engine_run_time": 1099.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 21.0,
+    "engine_rpm": 1099.0,
+    "vehicle_speed": 15,
+    "coolant_temperature": 70
+  },
+  {
+    "engine_run_time": 1501.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 1501.0,
+    "vehicle_speed": 21,
+    "coolant_temperature": 70
+  },
+  {
+    "engine_run_time": 1439.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 1439.0,
+    "vehicle_speed": 24,
+    "coolant_temperature": 70
+  },
+  {
+    "engine_run_time": 828.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 828.0,
+    "vehicle_speed": 24,
+    "coolant_temperature": 70
+  },
+  {
+    "engine_run_time": 761.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 16.0,
+    "engine_rpm": 761.0,
+    "vehicle_speed": 24,
+    "coolant_temperature": 71
+  },
+  {
+    "engine_run_time": 1180.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 16.0,
+    "engine_rpm": 1180.0,
+    "vehicle_speed": 23,
+    "coolant_temperature": 71
+  },
+  {
+    "engine_run_time": 1250.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 17.0,
+    "engine_rpm": 1250.0,
+    "vehicle_speed": 25,
+    "coolant_temperature": 71
+  },
+  {
+    "engine_run_time": 1359.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 14.0,
+    "engine_rpm": 1359.0,
+    "vehicle_speed": 27,
+    "coolant_temperature": 71
+  },
+  {
+    "engine_run_time": 1084.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 1084.0,
+    "vehicle_speed": 28,
+    "coolant_temperature": 71
+  },
+  {
+    "engine_run_time": 996.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 996.0,
+    "vehicle_speed": 27,
+    "coolant_temperature": 72
+  },
+  {
+    "engine_run_time": 918.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 918.0,
+    "vehicle_speed": 26,
+    "coolant_temperature": 72
+  },
+  {
+    "engine_run_time": 743.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 743.0,
+    "vehicle_speed": 21,
+    "coolant_temperature": 72
+  },
+  {
+    "engine_run_time": 716.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 716.0,
+    "vehicle_speed": 13,
+    "coolant_temperature": 72
+  },
+  {
+    "engine_run_time": 739.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 19.0,
+    "engine_rpm": 739.0,
+    "vehicle_speed": 6,
+    "coolant_temperature": 72
+  },
+  {
+    "engine_run_time": 910.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 21.0,
+    "engine_rpm": 910.0,
+    "vehicle_speed": 9,
+    "coolant_temperature": 73
+  },
+  {
+    "engine_run_time": 1053.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 20.0,
+    "engine_rpm": 1053.0,
+    "vehicle_speed": 14,
+    "coolant_temperature": 73
+  },
+  {
+    "engine_run_time": 1459.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 20.0,
+    "engine_rpm": 1459.0,
+    "vehicle_speed": 20,
+    "coolant_temperature": 73
+  },
+  {
+    "engine_run_time": 1156.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 18.0,
+    "engine_rpm": 1156.0,
+    "vehicle_speed": 21,
+    "coolant_temperature": 74
+  },
+  {
+    "engine_run_time": 1142.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 15.0,
+    "engine_rpm": 1142.0,
+    "vehicle_speed": 23,
+    "coolant_temperature": 73
+  },
+  {
+    "engine_run_time": 1213.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 1213.0,
+    "vehicle_speed": 24,
+    "coolant_temperature": 73
+  },
+  {
+    "engine_run_time": 1176.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 14.0,
+    "engine_rpm": 1176.0,
+    "vehicle_speed": 23,
+    "coolant_temperature": 75
+  },
+  {
+    "engine_run_time": 1110.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 15.0,
+    "engine_rpm": 1110.0,
+    "vehicle_speed": 21,
+    "coolant_temperature": 74
+  },
+  {
+    "engine_run_time": 1090.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 1090.0,
+    "vehicle_speed": 22,
+    "coolant_temperature": 74
+  },
+  {
+    "engine_run_time": 947.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 947.0,
+    "vehicle_speed": 21,
+    "coolant_temperature": 74
+  },
+  {
+    "engine_run_time": 729.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 729.0,
+    "vehicle_speed": 20,
+    "coolant_temperature": 75
+  },
+  {
+    "engine_run_time": 682.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 16.0,
+    "engine_rpm": 682.0,
+    "vehicle_speed": 19,
+    "coolant_temperature": 75
+  },
+  {
+    "engine_run_time": 863.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 17.0,
+    "engine_rpm": 863.0,
+    "vehicle_speed": 18,
+    "coolant_temperature": 74
+  },
+  {
+    "engine_run_time": 1002.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 20.0,
+    "engine_rpm": 1002.0,
+    "vehicle_speed": 20,
+    "coolant_temperature": 76
+  },
+  {
+    "engine_run_time": 1091.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 22.0,
+    "engine_rpm": 1091.0,
+    "vehicle_speed": 22,
+    "coolant_temperature": 75
+  },
+  {
+    "engine_run_time": 1259.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 20.0,
+    "engine_rpm": 1259.0,
+    "vehicle_speed": 25,
+    "coolant_temperature": 75
+  },
+  {
+    "engine_run_time": 1409.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 12.0,
+    "engine_rpm": 1409.0,
+    "vehicle_speed": 28,
+    "coolant_temperature": 76
+  },
+  {
+    "engine_run_time": 969.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 969.0,
+    "vehicle_speed": 27,
+    "coolant_temperature": 76
+  },
+  {
+    "engine_run_time": 719.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 719.0,
+    "vehicle_speed": 26,
+    "coolant_temperature": 77
+  },
+  {
+    "engine_run_time": 703.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 703.0,
+    "vehicle_speed": 24,
+    "coolant_temperature": 76
+  },
+  {
+    "engine_run_time": 711.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 711.0,
+    "vehicle_speed": 22,
+    "coolant_temperature": 77
+  },
+  {
+    "engine_run_time": 690.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 690.0,
+    "vehicle_speed": 20,
+    "coolant_temperature": 76
+  },
+  {
+    "engine_run_time": 696.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 696.0,
+    "vehicle_speed": 18,
+    "coolant_temperature": 76
+  },
+  {
+    "engine_run_time": 698.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 698.0,
+    "vehicle_speed": 13,
+    "coolant_temperature": 76
+  },
+  {
+    "engine_run_time": 712.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 712.0,
+    "vehicle_speed": 9,
+    "coolant_temperature": 76
+  },
+  {
+    "engine_run_time": 703.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 703.0,
+    "vehicle_speed": 6,
+    "coolant_temperature": 77
+  },
+  {
+    "engine_run_time": 702.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 14.0,
+    "engine_rpm": 702.0,
+    "vehicle_speed": 3,
+    "coolant_temperature": 78
+  },
+  {
+    "engine_run_time": 1273.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 17.0,
+    "engine_rpm": 1273.0,
+    "vehicle_speed": 5,
+    "coolant_temperature": 77
+  },
+  {
+    "engine_run_time": 1283.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 14.0,
+    "engine_rpm": 1283.0,
+    "vehicle_speed": 9,
+    "coolant_temperature": 77
+  },
+  {
+    "engine_run_time": 1442.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 1442.0,
+    "vehicle_speed": 10,
+    "coolant_temperature": 77
+  },
+  {
+    "engine_run_time": 811.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 811.0,
+    "vehicle_speed": 12,
+    "coolant_temperature": 78
+  },
+  {
+    "engine_run_time": 701.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 701.0,
+    "vehicle_speed": 14,
+    "coolant_temperature": 78
+  },
+  {
+    "engine_run_time": 713.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 713.0,
+    "vehicle_speed": 16,
+    "coolant_temperature": 78
+  },
+  {
+    "engine_run_time": 699.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 699.0,
+    "vehicle_speed": 17,
+    "coolant_temperature": 78
+  },
+  {
+    "engine_run_time": 693.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 693.0,
+    "vehicle_speed": 13,
+    "coolant_temperature": 78
+  },
+  {
+    "engine_run_time": 693.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 17.0,
+    "engine_rpm": 693.0,
+    "vehicle_speed": 13,
+    "coolant_temperature": 79
+  },
+  {
+    "engine_run_time": 1104.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 18.0,
+    "engine_rpm": 1104.0,
+    "vehicle_speed": 15,
+    "coolant_temperature": 78
+  },
+  {
+    "engine_run_time": 1332.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 16.0,
+    "engine_rpm": 1332.0,
+    "vehicle_speed": 18,
+    "coolant_temperature": 78
+  },
+  {
+    "engine_run_time": 1432.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 1432.0,
+    "vehicle_speed": 20,
+    "coolant_temperature": 78
+  },
+  {
+    "engine_run_time": 941.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 941.0,
+    "vehicle_speed": 12,
+    "coolant_temperature": 79
+  },
+  {
+    "engine_run_time": 721.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 14.0,
+    "engine_rpm": 721.0,
+    "vehicle_speed": 4,
+    "coolant_temperature": 79
+  },
+  {
+    "engine_run_time": 693.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 14.0,
+    "engine_rpm": 693.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 79
+  },
+  {
+    "engine_run_time": 695.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 14.0,
+    "engine_rpm": 695.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 79
+  },
+  {
+    "engine_run_time": 708.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 14.0,
+    "engine_rpm": 708.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 79
+  },
+  {
+    "engine_run_time": 697.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 26.0,
+    "engine_rpm": 697.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 79
+  },
+  {
+    "engine_run_time": 1720.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 18.0,
+    "engine_rpm": 1720.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 79
+  },
+  {
+    "engine_run_time": 1298.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 16.0,
+    "engine_rpm": 1298.0,
+    "vehicle_speed": 3,
+    "coolant_temperature": 79
+  },
+  {
+    "engine_run_time": 1183.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 1183.0,
+    "vehicle_speed": 5,
+    "coolant_temperature": 79
+  },
+  {
+    "engine_run_time": 787.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 13.0,
+    "engine_rpm": 787.0,
+    "vehicle_speed": 2,
+    "coolant_temperature": 81
+  },
+  {
+    "engine_run_time": 699.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 14.0,
+    "engine_rpm": 699.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 80
+  },
+  {
+    "engine_run_time": 701.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 14.0,
+    "engine_rpm": 701.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 80
+  },
+  {
+    "engine_run_time": 695.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 14.0,
+    "engine_rpm": 695.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 80
+  },
+  {
+    "engine_run_time": 695.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 14.0,
+    "engine_rpm": 695.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 80
+  },
+  {
+    "engine_run_time": 706.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 24.0,
+    "engine_rpm": 706.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 80
+  },
+  {
+    "engine_run_time": 2213.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 19.0,
+    "engine_rpm": 2213.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 80
+  },
+  {
+    "engine_run_time": 1101.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 1101.0,
+    "vehicle_speed": 5,
+    "coolant_temperature": 81
+  },
+  {
+    "engine_run_time": 998.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 16.0,
+    "engine_rpm": 998.0,
+    "vehicle_speed": 5,
+    "coolant_temperature": 81
+  },
+  {
+    "engine_run_time": 1014.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 1014.0,
+    "vehicle_speed": 4,
+    "coolant_temperature": 81
+  },
+  {
+    "engine_run_time": 715.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 16.0,
+    "engine_rpm": 715.0,
+    "vehicle_speed": 4,
+    "coolant_temperature": 81
+  },
+  {
+    "engine_run_time": 1008.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 1008.0,
+    "vehicle_speed": 4,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 694.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 14.0,
+    "engine_rpm": 694.0,
+    "vehicle_speed": 3,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 682.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 682.0,
+    "vehicle_speed": 2,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 702.0,
+    "intake_air_temperature": 17,
+    "throttle_position": 14.0,
+    "engine_rpm": 702.0,
+    "vehicle_speed": 2,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 694.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 694.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 727.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 727.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 714.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 714.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 697.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 697.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 703.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 703.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 758.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 16.0,
+    "engine_rpm": 758.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 1225.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 16.0,
+    "engine_rpm": 1225.0,
+    "vehicle_speed": 2,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 841.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 841.0,
+    "vehicle_speed": 6,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 704.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 16.0,
+    "engine_rpm": 704.0,
+    "vehicle_speed": 6,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 1326.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 16.0,
+    "engine_rpm": 1326.0,
+    "vehicle_speed": 6,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 919.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 13.0,
+    "engine_rpm": 919.0,
+    "vehicle_speed": 9,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 739.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 13.0,
+    "engine_rpm": 739.0,
+    "vehicle_speed": 7,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 714.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 714.0,
+    "vehicle_speed": 2,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 692.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 692.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 709.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 709.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 703.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 703.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 719.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 719.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 710.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 710.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 702.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 702.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 691.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 691.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 779.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 779.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 871.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 15.0,
+    "engine_rpm": 871.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 775.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 16.0,
+    "engine_rpm": 775.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 1204.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 1204.0,
+    "vehicle_speed": 3,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 773.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 13.0,
+    "engine_rpm": 773.0,
+    "vehicle_speed": 3,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 694.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 694.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 1196.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 18.0,
+    "engine_rpm": 1196.0,
+    "vehicle_speed": 2,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 1922.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 17.0,
+    "engine_rpm": 1922.0,
+    "vehicle_speed": 6,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1480.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 1480.0,
+    "vehicle_speed": 11,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1396.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 13.0,
+    "engine_rpm": 1396.0,
+    "vehicle_speed": 10,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1000.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 26.0,
+    "engine_rpm": 1000.0,
+    "vehicle_speed": 6,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1494.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 13.0,
+    "engine_rpm": 1494.0,
+    "vehicle_speed": 2,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 856.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 17.0,
+    "engine_rpm": 856.0,
+    "vehicle_speed": 4,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 1184.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 16.0,
+    "engine_rpm": 1184.0,
+    "vehicle_speed": 4,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1091.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 13.0,
+    "engine_rpm": 1091.0,
+    "vehicle_speed": 8,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 1134.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 1134.0,
+    "vehicle_speed": 6,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 750.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 750.0,
+    "vehicle_speed": 4,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 691.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 15.0,
+    "engine_rpm": 691.0,
+    "vehicle_speed": 2,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1111.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 17.0,
+    "engine_rpm": 1111.0,
+    "vehicle_speed": 5,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 761.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 18.0,
+    "engine_rpm": 761.0,
+    "vehicle_speed": 6,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1197.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 19.0,
+    "engine_rpm": 1197.0,
+    "vehicle_speed": 9,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 1755.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 18.0,
+    "engine_rpm": 1755.0,
+    "vehicle_speed": 13,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 1150.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 15.0,
+    "engine_rpm": 1150.0,
+    "vehicle_speed": 13,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 1126.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 20.0,
+    "engine_rpm": 1126.0,
+    "vehicle_speed": 15,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 1337.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 1337.0,
+    "vehicle_speed": 18,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 1310.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 16.0,
+    "engine_rpm": 1310.0,
+    "vehicle_speed": 19,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 951.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 15.0,
+    "engine_rpm": 951.0,
+    "vehicle_speed": 19,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 1039.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 13.0,
+    "engine_rpm": 1039.0,
+    "vehicle_speed": 21,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 960.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 13.0,
+    "engine_rpm": 960.0,
+    "vehicle_speed": 20,
+    "coolant_temperature": 90
+  },
+  {
+    "engine_run_time": 821.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 13.0,
+    "engine_rpm": 821.0,
+    "vehicle_speed": 19,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 718.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 12.0,
+    "engine_rpm": 718.0,
+    "vehicle_speed": 19,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 706.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 13.0,
+    "engine_rpm": 706.0,
+    "vehicle_speed": 18,
+    "coolant_temperature": 90
+  },
+  {
+    "engine_run_time": 699.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 13.0,
+    "engine_rpm": 699.0,
+    "vehicle_speed": 16,
+    "coolant_temperature": 90
+  },
+  {
+    "engine_run_time": 690.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 13.0,
+    "engine_rpm": 690.0,
+    "vehicle_speed": 14,
+    "coolant_temperature": 91
+  },
+  {
+    "engine_run_time": 714.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 18.0,
+    "engine_rpm": 714.0,
+    "vehicle_speed": 12,
+    "coolant_temperature": 90
+  },
+  {
+    "engine_run_time": 1075.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 16.0,
+    "engine_rpm": 1075.0,
+    "vehicle_speed": 11,
+    "coolant_temperature": 90
+  },
+  {
+    "engine_run_time": 939.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 13.0,
+    "engine_rpm": 939.0,
+    "vehicle_speed": 13,
+    "coolant_temperature": 90
+  },
+  {
+    "engine_run_time": 1029.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 13.0,
+    "engine_rpm": 1029.0,
+    "vehicle_speed": 14,
+    "coolant_temperature": 90
+  },
+  {
+    "engine_run_time": 817.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 12.0,
+    "engine_rpm": 817.0,
+    "vehicle_speed": 14,
+    "coolant_temperature": 90
+  },
+  {
+    "engine_run_time": 706.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 13.0,
+    "engine_rpm": 706.0,
+    "vehicle_speed": 16,
+    "coolant_temperature": 91
+  },
+  {
+    "engine_run_time": 683.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 13.0,
+    "engine_rpm": 683.0,
+    "vehicle_speed": 15,
+    "coolant_temperature": 91
+  },
+  {
+    "engine_run_time": 704.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 13.0,
+    "engine_rpm": 704.0,
+    "vehicle_speed": 13,
+    "coolant_temperature": 93
+  },
+  {
+    "engine_run_time": 699.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 13.0,
+    "engine_rpm": 699.0,
+    "vehicle_speed": 9,
+    "coolant_temperature": 91
+  },
+  {
+    "engine_run_time": 696.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 696.0,
+    "vehicle_speed": 3,
+    "coolant_temperature": 90
+  },
+  {
+    "engine_run_time": 681.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 681.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 93
+  },
+  {
+    "engine_run_time": 702.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 702.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 91
+  },
+  {
+    "engine_run_time": 700.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 700.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 91
+  },
+  {
+    "engine_run_time": 700.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 700.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 92
+  },
+  {
+    "engine_run_time": 690.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 690.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 92
+  },
+  {
+    "engine_run_time": 711.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 711.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 91
+  },
+  {
+    "engine_run_time": 698.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 698.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 92
+  },
+  {
+    "engine_run_time": 703.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 703.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 91
+  },
+  {
+    "engine_run_time": 700.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 25.0,
+    "engine_rpm": 700.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 91
+  },
+  {
+    "engine_run_time": 1012.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 15.0,
+    "engine_rpm": 1012.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 91
+  },
+  {
+    "engine_run_time": 1046.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 16.0,
+    "engine_rpm": 1046.0,
+    "vehicle_speed": 3,
+    "coolant_temperature": 91
+  },
+  {
+    "engine_run_time": 1372.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 1372.0,
+    "vehicle_speed": 2,
+    "coolant_temperature": 91
+  },
+  {
+    "engine_run_time": 1008.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 15.0,
+    "engine_rpm": 1008.0,
+    "vehicle_speed": 4,
+    "coolant_temperature": 92
+  },
+  {
+    "engine_run_time": 1291.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 16.0,
+    "engine_rpm": 1291.0,
+    "vehicle_speed": 5,
+    "coolant_temperature": 91
+  },
+  {
+    "engine_run_time": 1117.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 16.0,
+    "engine_rpm": 1117.0,
+    "vehicle_speed": 8,
+    "coolant_temperature": 92
+  },
+  {
+    "engine_run_time": 1301.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 16.0,
+    "engine_rpm": 1301.0,
+    "vehicle_speed": 9,
+    "coolant_temperature": 91
+  },
+  {
+    "engine_run_time": 1517.0,
+    "intake_air_temperature": 18,
+    "throttle_position": 14.0,
+    "engine_rpm": 1517.0,
+    "vehicle_speed": 11,
+    "coolant_temperature": 91
+  },
+  {
+    "engine_run_time": 908.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 13.0,
+    "engine_rpm": 908.0,
+    "vehicle_speed": 11,
+    "coolant_temperature": 90
+  },
+  {
+    "engine_run_time": 716.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 13.0,
+    "engine_rpm": 716.0,
+    "vehicle_speed": 9,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 717.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 13.0,
+    "engine_rpm": 717.0,
+    "vehicle_speed": 8,
+    "coolant_temperature": 90
+  },
+  {
+    "engine_run_time": 699.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 13.0,
+    "engine_rpm": 699.0,
+    "vehicle_speed": 6,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 706.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 706.0,
+    "vehicle_speed": 2,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 680.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 15.0,
+    "engine_rpm": 680.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 1201.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 1201.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 763.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 15.0,
+    "engine_rpm": 763.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 861.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 16.0,
+    "engine_rpm": 861.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1253.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 1253.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 881.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 13.0,
+    "engine_rpm": 881.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 693.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 16.0,
+    "engine_rpm": 693.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 859.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 13.0,
+    "engine_rpm": 859.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 745.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 745.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 862.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 13.0,
+    "engine_rpm": 862.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 680.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 680.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 672.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 16.0,
+    "engine_rpm": 672.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 1011.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 13.0,
+    "engine_rpm": 1011.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 703.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 703.0,
+    "vehicle_speed": 2,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 703.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 703.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 686.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 686.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 690.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 690.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 682.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 16.0,
+    "engine_rpm": 682.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 1145.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 1145.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 715.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 715.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 694.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 14.0,
+    "engine_rpm": 694.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 699.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 13.0,
+    "engine_rpm": 699.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 700.0,
+    "intake_air_temperature": 19,
+    "throttle_position": 13.0,
+    "engine_rpm": 700.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 430.0,
+    "intake_air_temperature": 20,
+    "throttle_position": 12.0,
+    "engine_rpm": 430.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 20,
+    "throttle_position": 12.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 20,
+    "throttle_position": 16.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 20,
+    "throttle_position": 16.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 20,
+    "throttle_position": 16.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 16.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 16.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 16.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 16.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 16.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 16.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 16.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 16.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 16.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 16.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 16.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 16.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 16.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 0.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 13.0,
+    "engine_rpm": 0.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 1331.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 13.0,
+    "engine_rpm": 1331.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 763.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 13.0,
+    "engine_rpm": 763.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 718.0,
+    "intake_air_temperature": 21,
+    "throttle_position": 16.0,
+    "engine_rpm": 718.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 1321.0,
+    "intake_air_temperature": 22,
+    "throttle_position": 21.0,
+    "engine_rpm": 1321.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 1259.0,
+    "intake_air_temperature": 22,
+    "throttle_position": 25.0,
+    "engine_rpm": 1259.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 1165.0,
+    "intake_air_temperature": 22,
+    "throttle_position": 16.0,
+    "engine_rpm": 1165.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 1257.0,
+    "intake_air_temperature": 22,
+    "throttle_position": 16.0,
+    "engine_rpm": 1257.0,
+    "vehicle_speed": 2,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 1288.0,
+    "intake_air_temperature": 22,
+    "throttle_position": 14.0,
+    "engine_rpm": 1288.0,
+    "vehicle_speed": 2,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 731.0,
+    "intake_air_temperature": 22,
+    "throttle_position": 16.0,
+    "engine_rpm": 731.0,
+    "vehicle_speed": 2,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 1140.0,
+    "intake_air_temperature": 23,
+    "throttle_position": 14.0,
+    "engine_rpm": 1140.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 744.0,
+    "intake_air_temperature": 22,
+    "throttle_position": 14.0,
+    "engine_rpm": 744.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 718.0,
+    "intake_air_temperature": 23,
+    "throttle_position": 16.0,
+    "engine_rpm": 718.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 81
+  },
+  {
+    "engine_run_time": 1101.0,
+    "intake_air_temperature": 23,
+    "throttle_position": 16.0,
+    "engine_rpm": 1101.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 1017.0,
+    "intake_air_temperature": 23,
+    "throttle_position": 14.0,
+    "engine_rpm": 1017.0,
+    "vehicle_speed": 4,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 872.0,
+    "intake_air_temperature": 23,
+    "throttle_position": 16.0,
+    "engine_rpm": 872.0,
+    "vehicle_speed": 6,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 774.0,
+    "intake_air_temperature": 23,
+    "throttle_position": 16.0,
+    "engine_rpm": 774.0,
+    "vehicle_speed": 5,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 1057.0,
+    "intake_air_temperature": 23,
+    "throttle_position": 16.0,
+    "engine_rpm": 1057.0,
+    "vehicle_speed": 7,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 1310.0,
+    "intake_air_temperature": 23,
+    "throttle_position": 13.0,
+    "engine_rpm": 1310.0,
+    "vehicle_speed": 9,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 904.0,
+    "intake_air_temperature": 23,
+    "throttle_position": 13.0,
+    "engine_rpm": 904.0,
+    "vehicle_speed": 9,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 722.0,
+    "intake_air_temperature": 23,
+    "throttle_position": 13.0,
+    "engine_rpm": 722.0,
+    "vehicle_speed": 9,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 744.0,
+    "intake_air_temperature": 23,
+    "throttle_position": 18.0,
+    "engine_rpm": 744.0,
+    "vehicle_speed": 8,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 973.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 14.0,
+    "engine_rpm": 973.0,
+    "vehicle_speed": 8,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 990.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 990.0,
+    "vehicle_speed": 11,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 739.0,
+    "intake_air_temperature": 23,
+    "throttle_position": 16.0,
+    "engine_rpm": 739.0,
+    "vehicle_speed": 10,
+    "coolant_temperature": 82
+  },
+  {
+    "engine_run_time": 829.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 16.0,
+    "engine_rpm": 829.0,
+    "vehicle_speed": 10,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 916.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 20.0,
+    "engine_rpm": 916.0,
+    "vehicle_speed": 12,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 1185.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 1185.0,
+    "vehicle_speed": 16,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 948.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 948.0,
+    "vehicle_speed": 18,
+    "coolant_temperature": 83
+  },
+  {
+    "engine_run_time": 741.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 741.0,
+    "vehicle_speed": 17,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 715.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 715.0,
+    "vehicle_speed": 17,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 703.0,
+    "intake_air_temperature": 23,
+    "throttle_position": 13.0,
+    "engine_rpm": 703.0,
+    "vehicle_speed": 16,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 698.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 698.0,
+    "vehicle_speed": 14,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 683.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 14.0,
+    "engine_rpm": 683.0,
+    "vehicle_speed": 10,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 698.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 698.0,
+    "vehicle_speed": 9,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 722.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 17.0,
+    "engine_rpm": 722.0,
+    "vehicle_speed": 7,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 1303.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 1303.0,
+    "vehicle_speed": 8,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 1009.0,
+    "intake_air_temperature": 23,
+    "throttle_position": 13.0,
+    "engine_rpm": 1009.0,
+    "vehicle_speed": 8,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 769.0,
+    "intake_air_temperature": 23,
+    "throttle_position": 13.0,
+    "engine_rpm": 769.0,
+    "vehicle_speed": 8,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 705.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 14.0,
+    "engine_rpm": 705.0,
+    "vehicle_speed": 5,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 722.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 14.0,
+    "engine_rpm": 722.0,
+    "vehicle_speed": 2,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 710.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 14.0,
+    "engine_rpm": 710.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 704.0,
+    "intake_air_temperature": 23,
+    "throttle_position": 14.0,
+    "engine_rpm": 704.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 680.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 14.0,
+    "engine_rpm": 680.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 707.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 25.0,
+    "engine_rpm": 707.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 1152.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 16.0,
+    "engine_rpm": 1152.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 1021.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 14.0,
+    "engine_rpm": 1021.0,
+    "vehicle_speed": 3,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 747.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 16.0,
+    "engine_rpm": 747.0,
+    "vehicle_speed": 4,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 1012.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 18.0,
+    "engine_rpm": 1012.0,
+    "vehicle_speed": 6,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1211.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 18.0,
+    "engine_rpm": 1211.0,
+    "vehicle_speed": 9,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1443.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 19.0,
+    "engine_rpm": 1443.0,
+    "vehicle_speed": 10,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1553.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 17.0,
+    "engine_rpm": 1553.0,
+    "vehicle_speed": 11,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1431.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 15.0,
+    "engine_rpm": 1431.0,
+    "vehicle_speed": 10,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 996.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 19.0,
+    "engine_rpm": 996.0,
+    "vehicle_speed": 7,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 2275.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 21.0,
+    "engine_rpm": 2275.0,
+    "vehicle_speed": 4,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 1282.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 16.0,
+    "engine_rpm": 1282.0,
+    "vehicle_speed": 9,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1425.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 1425.0,
+    "vehicle_speed": 10,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 1098.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 1098.0,
+    "vehicle_speed": 10,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 758.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 12.0,
+    "engine_rpm": 758.0,
+    "vehicle_speed": 11,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 714.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 714.0,
+    "vehicle_speed": 11,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 700.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 700.0,
+    "vehicle_speed": 8,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 703.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 703.0,
+    "vehicle_speed": 3,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 699.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 699.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 695.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 695.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 691.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 16.0,
+    "engine_rpm": 691.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 90
+  },
+  {
+    "engine_run_time": 1648.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 18.0,
+    "engine_rpm": 1648.0,
+    "vehicle_speed": 0,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 1234.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 18.0,
+    "engine_rpm": 1234.0,
+    "vehicle_speed": 4,
+    "coolant_temperature": 90
+  },
+  {
+    "engine_run_time": 1347.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 14.0,
+    "engine_rpm": 1347.0,
+    "vehicle_speed": 9,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 1552.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 16.0,
+    "engine_rpm": 1552.0,
+    "vehicle_speed": 12,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 929.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 929.0,
+    "vehicle_speed": 12,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 1087.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 1087.0,
+    "vehicle_speed": 13,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 840.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 16.0,
+    "engine_rpm": 840.0,
+    "vehicle_speed": 12,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 962.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 14.0,
+    "engine_rpm": 962.0,
+    "vehicle_speed": 13,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 1102.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 13.0,
+    "engine_rpm": 1102.0,
+    "vehicle_speed": 15,
+    "coolant_temperature": 90
+  },
+  {
+    "engine_run_time": 995.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 995.0,
+    "vehicle_speed": 14,
+    "coolant_temperature": 89
+  },
+  {
+    "engine_run_time": 886.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 16.0,
+    "engine_rpm": 886.0,
+    "vehicle_speed": 13,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 992.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 13.0,
+    "engine_rpm": 992.0,
+    "vehicle_speed": 13,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 1041.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 1041.0,
+    "vehicle_speed": 14,
+    "coolant_temperature": 88
+  },
+  {
+    "engine_run_time": 948.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 948.0,
+    "vehicle_speed": 12,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 788.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 788.0,
+    "vehicle_speed": 5,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 694.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 16.0,
+    "engine_rpm": 694.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1373.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 17.0,
+    "engine_rpm": 1373.0,
+    "vehicle_speed": 1,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1216.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 21.0,
+    "engine_rpm": 1216.0,
+    "vehicle_speed": 5,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1507.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 14.0,
+    "engine_rpm": 1507.0,
+    "vehicle_speed": 11,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1369.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 22.0,
+    "engine_rpm": 1369.0,
+    "vehicle_speed": 14,
+    "coolant_temperature": 87
+  },
+  {
+    "engine_run_time": 1294.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 14.0,
+    "engine_rpm": 1294.0,
+    "vehicle_speed": 18,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 1431.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 1431.0,
+    "vehicle_speed": 21,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 793.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 18.0,
+    "engine_rpm": 793.0,
+    "vehicle_speed": 20,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 1081.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 17.0,
+    "engine_rpm": 1081.0,
+    "vehicle_speed": 21,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 1204.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 21.0,
+    "engine_rpm": 1204.0,
+    "vehicle_speed": 24,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 1369.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 1369.0,
+    "vehicle_speed": 27,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 1112.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 1112.0,
+    "vehicle_speed": 28,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 741.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 13.0,
+    "engine_rpm": 741.0,
+    "vehicle_speed": 24,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 698.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 698.0,
+    "vehicle_speed": 19,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 716.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 15.0,
+    "engine_rpm": 716.0,
+    "vehicle_speed": 19,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 978.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 20.0,
+    "engine_rpm": 978.0,
+    "vehicle_speed": 19,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 1157.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 19.0,
+    "engine_rpm": 1157.0,
+    "vehicle_speed": 23,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 1377.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 14.0,
+    "engine_rpm": 1377.0,
+    "vehicle_speed": 27,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 953.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 14.0,
+    "engine_rpm": 953.0,
+    "vehicle_speed": 29,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 1078.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 13.0,
+    "engine_rpm": 1078.0,
+    "vehicle_speed": 29,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 1107.0,
+    "intake_air_temperature": 24,
+    "throttle_position": 13.0,
+    "engine_rpm": 1107.0,
+    "vehicle_speed": 30,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 1100.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 13.0,
+    "engine_rpm": 1100.0,
+    "vehicle_speed": 30,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 1118.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 13.0,
+    "engine_rpm": 1118.0,
+    "vehicle_speed": 30,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 747.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 13.0,
+    "engine_rpm": 747.0,
+    "vehicle_speed": 27,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 719.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 13.0,
+    "engine_rpm": 719.0,
+    "vehicle_speed": 22,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 684.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 17.0,
+    "engine_rpm": 684.0,
+    "vehicle_speed": 15,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 1090.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 19.0,
+    "engine_rpm": 1090.0,
+    "vehicle_speed": 14,
+    "coolant_temperature": 86
+  },
+  {
+    "engine_run_time": 1268.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 23.0,
+    "engine_rpm": 1268.0,
+    "vehicle_speed": 17,
+    "coolant_temperature": 85
+  },
+  {
+    "engine_run_time": 1633.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 14.0,
+    "engine_rpm": 1633.0,
+    "vehicle_speed": 23,
+    "coolant_temperature": 84
+  },
+  {
+    "engine_run_time": 1281.0,
+    "intake_air_temperature": 25,
+    "throttle_position": 18.0,
+    "engine_rpm": 1281.0,
+    "vehicle_speed": 24,
+    "coolant_temperature": 85
+  }
+]
+

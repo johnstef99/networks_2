@@ -1,0 +1,2 @@
+PSTART 05-12-2020 11:27:44 T00 05-12 11:02 +21 C PSTOP
+with response time = 26ms | Sensor 0: +21°C

@@ -1,0 +1,562 @@
+[
+  {
+    "LMOTOR": 165,
+    "RMOTOR": 165,
+    "ALTITUDE": 331,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.3
+  },
+  {
+    "LMOTOR": 163,
+    "RMOTOR": 163,
+    "ALTITUDE": 315,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.3
+  },
+  {
+    "LMOTOR": 161,
+    "RMOTOR": 161,
+    "ALTITUDE": 301,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.26
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 287,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.26
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 270,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.21
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 253,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.21
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 240,
+    "TEMPERATURE": 21.94,
+    "PRESSURE": 1010.17
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 223,
+    "TEMPERATURE": 21.94,
+    "PRESSURE": 1010.17
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 208,
+    "TEMPERATURE": 21.94,
+    "PRESSURE": 1010.19
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 194,
+    "TEMPERATURE": 21.94,
+    "PRESSURE": 1010.19
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 178,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.2
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 166,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.2
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 154,
+    "TEMPERATURE": 21.94,
+    "PRESSURE": 1010.2
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 143,
+    "TEMPERATURE": 21.94,
+    "PRESSURE": 1010.2
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 133,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.26
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 118,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.26
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 108,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.22
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 102,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.22
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 98,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.17
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 94,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.17
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 93,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.17
+  },
+  {
+    "LMOTOR": 159,
+    "RMOTOR": 159,
+    "ALTITUDE": 89,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.17
+  },
+  {
+    "LMOTOR": 157,
+    "RMOTOR": 157,
+    "ALTITUDE": 86,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.19
+  },
+  {
+    "LMOTOR": 155,
+    "RMOTOR": 155,
+    "ALTITUDE": 82,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.19
+  },
+  {
+    "LMOTOR": 153,
+    "RMOTOR": 153,
+    "ALTITUDE": 78,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.23
+  },
+  {
+    "LMOTOR": 151,
+    "RMOTOR": 151,
+    "ALTITUDE": 76,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.23
+  },
+  {
+    "LMOTOR": 149,
+    "RMOTOR": 149,
+    "ALTITUDE": 75,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.23
+  },
+  {
+    "LMOTOR": 147,
+    "RMOTOR": 147,
+    "ALTITUDE": 75,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.23
+  },
+  {
+    "LMOTOR": 145,
+    "RMOTOR": 145,
+    "ALTITUDE": 75,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.19
+  },
+  {
+    "LMOTOR": 143,
+    "RMOTOR": 143,
+    "ALTITUDE": 75,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.19
+  },
+  {
+    "LMOTOR": 142,
+    "RMOTOR": 142,
+    "ALTITUDE": 75,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.23
+  },
+  {
+    "LMOTOR": 142,
+    "RMOTOR": 142,
+    "ALTITUDE": 75,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.23
+  },
+  {
+    "LMOTOR": 142,
+    "RMOTOR": 142,
+    "ALTITUDE": 75,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.2
+  },
+  {
+    "LMOTOR": 142,
+    "RMOTOR": 142,
+    "ALTITUDE": 75,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.2
+  },
+  {
+    "LMOTOR": 142,
+    "RMOTOR": 142,
+    "ALTITUDE": 75,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.16
+  },
+  {
+    "LMOTOR": 142,
+    "RMOTOR": 142,
+    "ALTITUDE": 75,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.16
+  },
+  {
+    "LMOTOR": 166,
+    "RMOTOR": 166,
+    "ALTITUDE": 78,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.17
+  },
+  {
+    "LMOTOR": 166,
+    "RMOTOR": 166,
+    "ALTITUDE": 89,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.17
+  },
+  {
+    "LMOTOR": 166,
+    "RMOTOR": 166,
+    "ALTITUDE": 96,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.28
+  },
+  {
+    "LMOTOR": 166,
+    "RMOTOR": 166,
+    "ALTITUDE": 103,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.28
+  },
+  {
+    "LMOTOR": 166,
+    "RMOTOR": 166,
+    "ALTITUDE": 106,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.19
+  },
+  {
+    "LMOTOR": 166,
+    "RMOTOR": 166,
+    "ALTITUDE": 107,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.19
+  },
+  {
+    "LMOTOR": 166,
+    "RMOTOR": 166,
+    "ALTITUDE": 111,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.19
+  },
+  {
+    "LMOTOR": 166,
+    "RMOTOR": 166,
+    "ALTITUDE": 113,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.19
+  },
+  {
+    "LMOTOR": 166,
+    "RMOTOR": 166,
+    "ALTITUDE": 113,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.21
+  },
+  {
+    "LMOTOR": 166,
+    "RMOTOR": 166,
+    "ALTITUDE": 113,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.21
+  },
+  {
+    "LMOTOR": 166,
+    "RMOTOR": 166,
+    "ALTITUDE": 113,
+    "TEMPERATURE": 21.9,
+    "PRESSURE": 1010.2
+  },
+  {
+    "LMOTOR": 166,
+    "RMOTOR": 166,
+    "ALTITUDE": 113,
+    "TEMPERATURE": 21.9,
+    "PRESSURE": 1010.2
+  },
+  {
+    "LMOTOR": 166,
+    "RMOTOR": 166,
+    "ALTITUDE": 113,
+    "TEMPERATURE": 21.91,
+    "PRESSURE": 1010.2
+  },
+  {
+    "LMOTOR": 166,
+    "RMOTOR": 166,
+    "ALTITUDE": 114,
+    "TEMPERATURE": 21.91,
+    "PRESSURE": 1010.2
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 113,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.19
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 138,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.19
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 157,
+    "TEMPERATURE": 21.91,
+    "PRESSURE": 1010.22
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 168,
+    "TEMPERATURE": 21.91,
+    "PRESSURE": 1010.22
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 180,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.3
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 194,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.3
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 205,
+    "TEMPERATURE": 21.91,
+    "PRESSURE": 1010.23
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 217,
+    "TEMPERATURE": 21.91,
+    "PRESSURE": 1010.23
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 226,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.19
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 235,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.19
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 245,
+    "TEMPERATURE": 21.9,
+    "PRESSURE": 1010.24
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 253,
+    "TEMPERATURE": 21.9,
+    "PRESSURE": 1010.24
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 262,
+    "TEMPERATURE": 21.9,
+    "PRESSURE": 1010.22
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 268,
+    "TEMPERATURE": 21.9,
+    "PRESSURE": 1010.22
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 275,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.27
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 281,
+    "TEMPERATURE": 21.92,
+    "PRESSURE": 1010.27
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 287,
+    "TEMPERATURE": 21.9,
+    "PRESSURE": 1010.2
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 292,
+    "TEMPERATURE": 21.9,
+    "PRESSURE": 1010.2
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 297,
+    "TEMPERATURE": 21.9,
+    "PRESSURE": 1010.21
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 304,
+    "TEMPERATURE": 21.9,
+    "PRESSURE": 1010.21
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 309,
+    "TEMPERATURE": 21.89,
+    "PRESSURE": 1010.2
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 314,
+    "TEMPERATURE": 21.89,
+    "PRESSURE": 1010.2
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 320,
+    "TEMPERATURE": 21.9,
+    "PRESSURE": 1010.21
+  },
+  {
+    "LMOTOR": 183,
+    "RMOTOR": 183,
+    "ALTITUDE": 325,
+    "TEMPERATURE": 21.9,
+    "PRESSURE": 1010.21
+  },
+  {
+    "LMOTOR": 180,
+    "RMOTOR": 180,
+    "ALTITUDE": 333,
+    "TEMPERATURE": 21.9,
+    "PRESSURE": 1010.23
+  },
+  {
+    "LMOTOR": 178,
+    "RMOTOR": 178,
+    "ALTITUDE": 336,
+    "TEMPERATURE": 21.9,
+    "PRESSURE": 1010.21
+  },
+  {
+    "LMOTOR": 176,
+    "RMOTOR": 176,
+    "ALTITUDE": 338,
+    "TEMPERATURE": 21.9,
+    "PRESSURE": 1010.21
+  },
+  {
+    "LMOTOR": 174,
+    "RMOTOR": 174,
+    "ALTITUDE": 337,
+    "TEMPERATURE": 21.89,
+    "PRESSURE": 1010.22
+  },
+  {
+    "LMOTOR": 172,
+    "RMOTOR": 172,
+    "ALTITUDE": 335,
+    "TEMPERATURE": 21.89,
+    "PRESSURE": 1010.22
+  },
+  {
+    "LMOTOR": 170,
+    "RMOTOR": 170,
+    "ALTITUDE": 330,
+    "TEMPERATURE": 21.9,
+    "PRESSURE": 1010.25
+  }
+]
