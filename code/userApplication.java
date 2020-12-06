@@ -45,15 +45,15 @@ public class userApplication {
     getCodes();
     ITHAKI ithaki = new ITHAKI(SERVER_PORT, CLIENT_PORT, ECHO_CODE, IMG_CODE, SOUND_CODE, VEHICLE_CODE);
 
-    //echo(ithaki, 4 * 60, true);
-    //echo(ithaki, 4 * 60, false);
-    //images(ithaki);
-    //temperatures(ithaki);
-    //sound(ithaki);
-    //System.out.println("Open ithaki copter jar file and press a key to " + "continue..");
-    //System.in.read();
+    echo(ithaki, 4 * 60, true);
+    echo(ithaki, 4 * 60, false);
+    images(ithaki);
+    temperatures(ithaki);
+    sound(ithaki, 1, 2);
+    System.out.println("Open ithaki copter jar file and press a key to " + "continue..");
+    System.in.read();
     telemetry(ithaki, 60);
-    //vehicle(ithaki, 4 * 60);
+    vehicle(ithaki, 4 * 60);
   }
 
   /**
@@ -109,20 +109,26 @@ public class userApplication {
    * Gets the sound samples from ithaki
    *
    * @param ithaki
+   * @param firstSong  First song to get 1-99
+   * @param secondSong Second song to get 1-99
    */
-  private static void sound(ITHAKI ithaki) {
-    Sound song1_aq = ithaki.getSound(300, 3, true);
-    song1_aq.writeToFile(resultsDir + "song3");
-    song1_aq.play();
-
-    Sound song2_aq = ithaki.getSound(300, 4, true);
-    song2_aq.writeToFile(resultsDir + "song4");
-    song2_aq.play();
-
-    Sound song1 = ithaki.getSound(300, 3, false);
-    song1.writeToFile(resultsDir + "song3");
+  private static void sound(ITHAKI ithaki, int firstSong, int secondSong) {
+    System.out.println("Getting song " + Integer.toString(firstSong) + " with DPCM");
+    Sound song1 = ithaki.getSound(300, firstSong, false);
+    song1.writeToFile(resultsDir + "song" + Integer.toString(firstSong));
     song1.play();
 
+    System.out.println("Getting song " + Integer.toString(firstSong) + " with AQ-DPCM");
+    Sound song1_aq = ithaki.getSound(300, firstSong, true);
+    song1_aq.writeToFile(resultsDir + "song" + Integer.toString(firstSong));
+    song1_aq.play();
+
+    System.out.println("Getting song " + Integer.toString(secondSong) + " with AQ-DPCM");
+    Sound song2_aq = ithaki.getSound(300, secondSong, true);
+    song2_aq.writeToFile(resultsDir + "song" + Integer.toString(secondSong));
+    song2_aq.play();
+
+    System.out.println("Getting sound from generator");
     Sound gen = ithaki.getSound(300, 0, false);
     gen.writeToFile(resultsDir + "generator");
   }
