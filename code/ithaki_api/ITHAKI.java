@@ -26,8 +26,10 @@ public class ITHAKI {
    *
    * @param server_port
    * @param client_port
-   * @param echo_code
-   * @param image_code
+   * @param echo_code The code that starts with E
+   * @param image_code The code that starts with M
+   * @param sound_code The code that starts with A
+   * @param vehicle_code The code that starts with V
    */
   public ITHAKI(int server_port, int client_port, String echo_code, String image_code, String sound_code,
       String vehicle_code) {
