@@ -4,8 +4,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage[greek,english]{babel}
 \usepackage{alphabeta}
-\usepackage{graphicx}
-\graphicspath{{./}}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=cyan,
+}
 
 
 \author{Στεφανίδης Ιωάννης}
@@ -66,10 +72,19 @@ getImage, getSound, getTelemetry} και \texttt{getVehiclePacket} όλες αυ
 δυνατότητα διάκρισης μεταξύ πολλαπλών προορισμών σε ένα δεδομένο υπολογιστή
 υπηρεσίας.
 
-Επίσης ένα πρόγραμμα εφαρμογής που χρησιμοποιεί UDP είναι αποκλειστικά υπεύθυνο για το
-χειρισμό του προβλήματος της αξιοπιστίας και όσων αυτό συνεπάγεται, όπως η
-απώλεια μηνύματος, η αναπαραγωγή μηνύματος, η καθυστέρηση και η παράδοση εκτός
+Επίσης ένα πρόγραμμα εφαρμογής που χρησιμοποιεί UDP είναι αποκλειστικά υπεύθυνο
+για το χειρισμό του προβλήματος της αξιοπιστίας και όσων αυτό συνεπάγεται, όπως
+η απώλεια μηνύματος, η αναπαραγωγή μηνύματος, η καθυστέρηση και η παράδοση εκτός
 σειράς.
+
+\section{Statement of Originality}
+
+Ο κώδικας γράφτηκε από εμένα from scratch αλλά πρέπει να δώσω credits στον
+{\emph{Arcade}} καθώς με βοήθησε να λύσω ένα πρόβλημα που είχα στο κομμάτι του
+Sound,παρατηρώντας ότι κάνω overwrite τα bytes στον πίνακα \verb|song_bytes|.
+
+\href{https://github.com/johnstef99/networks_2/commit/bc42b8c7da607addea5c8f30b90cf869de907ab0}{link to that fix}
+
 
 \begin{thebibliography}{9}
 
