@@ -32,7 +32,7 @@ public class userApplication {
   static String IMG_CODE;
   static String SOUND_CODE;
   static String VEHICLE_CODE;
-  static String resultsDir = "../results/session2/";
+  static String resultsDir = "../results/session3/";
   static DatagramSocket SEND_SOCKET;
   static DatagramSocket RECIEVE_SOCKET;
   static InetAddress SERVER_ADDRESS;
@@ -53,7 +53,7 @@ public class userApplication {
     System.out.println("Open ithaki copter jar file and press a key to " + "continue..");
     System.in.read();
     telemetry(ithaki, 60);
-    vehicle(ithaki, 4 * 60);
+    vehicle(ithaki, 1 * 60);
   }
 
   /**
@@ -66,36 +66,36 @@ public class userApplication {
       int line = 0;
       while (reader.hasNextLine()) {
         switch (line) {
-          case 1:
-            CLIENT_PORT = Integer.parseInt(reader.nextLine());
-            System.out.println("client port: " + CLIENT_PORT);
-            break;
-          case 3:
-            SERVER_PORT = Integer.parseInt(reader.nextLine());
-            System.out.println("server port: " + SERVER_PORT);
-            break;
-          case 4:
-            ECHO_CODE = reader.nextLine();
-            System.out.println("ECHO_CODE: " + ECHO_CODE);
-            break;
-          case 5:
-            IMG_CODE = reader.nextLine();
-            System.out.println("IMG_CODE: " + IMG_CODE);
-            break;
-          case 6:
-            SOUND_CODE = reader.nextLine();
-            System.out.println("SOUND_CODE: " + SOUND_CODE);
-            break;
-          case 7:
-            System.out.println("COPTER_CODE: " + reader.nextLine());
-            break;
-          case 8:
-            VEHICLE_CODE = reader.nextLine();
-            System.out.println("VEHICLE_CODE: " + VEHICLE_CODE);
-            break;
-          default:
-            reader.nextLine();
-            break;
+        case 1:
+          CLIENT_PORT = Integer.parseInt(reader.nextLine());
+          System.out.println("client port: " + CLIENT_PORT);
+          break;
+        case 3:
+          SERVER_PORT = Integer.parseInt(reader.nextLine());
+          System.out.println("server port: " + SERVER_PORT);
+          break;
+        case 4:
+          ECHO_CODE = reader.nextLine();
+          System.out.println("ECHO_CODE: " + ECHO_CODE);
+          break;
+        case 5:
+          IMG_CODE = reader.nextLine();
+          System.out.println("IMG_CODE: " + IMG_CODE);
+          break;
+        case 6:
+          SOUND_CODE = reader.nextLine();
+          System.out.println("SOUND_CODE: " + SOUND_CODE);
+          break;
+        case 7:
+          System.out.println("COPTER_CODE: " + reader.nextLine());
+          break;
+        case 8:
+          VEHICLE_CODE = reader.nextLine();
+          System.out.println("VEHICLE_CODE: " + VEHICLE_CODE);
+          break;
+        default:
+          reader.nextLine();
+          break;
         }
         line++;
       }
@@ -222,22 +222,31 @@ public class userApplication {
       } else {
         System.out.println(copter_packets_file.getName() + " already exist");
       }
-      FileWriter echo_writer = new FileWriter(copter_packets_file, false);
-      echo_writer.write("[\n");
-      double startTime = System.currentTimeMillis();
+      FileWriter copter_writer = new FileWriter(copter_packets_file, false);
+      copter_writer.write("[\n");
       System.out.println("Progress\tPacket");
       DecimalFormat per = new DecimalFormat("#0.00");
-      for (double now = System.currentTimeMillis(); now < startTime + runTime * 1000; now = System
-          .currentTimeMillis()) {
+
+      double startTime = System.currentTimeMillis();
+      double now = startTime;
+      while (true) {
         IthakiCopterPacket aPacket = ithaki.getTelemetry();
         double progress = ((now - startTime) / (runTime * 1000)) * 100;
         System.out.println(per.format(progress) + "%\t" + aPacket.toString());
-        echo_writer.write(aPacket.toJson() + ",\n");
+        copter_writer.write(aPacket.toJson());
+
+        now = System.currentTimeMillis();
+        if (now > startTime + runTime * 1000) {
+          break;
+        } else {
+          copter_writer.write(",\n"); // needed for correct json
+        }
       }
+
       System.out.println("100%\tGetting telemetry packets finished");
       System.out.println("Exported to file: " + copter_packets_file.getName());
-      echo_writer.write("\n]");
-      echo_writer.close();
+      copter_writer.write("\n]");
+      copter_writer.close();
     } catch (IOException e) {
       System.out.println("Error creating " + copter_packets_file.getName());
       e.printStackTrace();
@@ -260,16 +269,25 @@ public class userApplication {
       }
       FileWriter vehicle_writer = new FileWriter(vehicle_packets_file, false);
       vehicle_writer.write("[\n");
-      double startTime = System.currentTimeMillis();
       System.out.println("Progress\tPacket");
       DecimalFormat per = new DecimalFormat("#0.00");
-      for (double now = System.currentTimeMillis(); now < startTime + runTime * 1000; now = System
-          .currentTimeMillis()) {
+
+      double startTime = System.currentTimeMillis();
+      double now = startTime;
+      while (true) {
         VehiclePacket aPacket = ithaki.getVehiclePacket();
         double progress = ((now - startTime) / (runTime * 1000)) * 100;
         System.out.println(per.format(progress) + "%\t" + aPacket.toString());
-        vehicle_writer.write(String.valueOf(aPacket.toJson()) + ",\n");
+        vehicle_writer.write(String.valueOf(aPacket.toJson()));
+
+        now = System.currentTimeMillis();
+        if (now > startTime + runTime * 1000) {
+          break;
+        } else {
+          vehicle_writer.write(",\n");
+        }
       }
+
       vehicle_writer.write("]");
       vehicle_writer.close();
       System.out.println("100%\tGetting vehicle packets finished");
