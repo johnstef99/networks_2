@@ -1,0 +1,7 @@
+*.class
+*.pcapng
+*.aux
+*.log
+*.pygtex
+*.pygstyle
+*.out
