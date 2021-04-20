@@ -32,7 +32,7 @@ public class userApplication {
   static String IMG_CODE;
   static String SOUND_CODE;
   static String VEHICLE_CODE;
-  static String resultsDir = "../results/session3/";
+  static String resultsDir = "../results/session1/";
   static DatagramSocket SEND_SOCKET;
   static DatagramSocket RECIEVE_SOCKET;
   static InetAddress SERVER_ADDRESS;
@@ -53,7 +53,7 @@ public class userApplication {
     System.out.println("Open ithaki copter jar file and press a key to " + "continue..");
     System.in.read();
     telemetry(ithaki, 60);
-    vehicle(ithaki, 1 * 60);
+    vehicle(ithaki, 4 * 60);
   }
 
   /**
