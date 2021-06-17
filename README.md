@@ -11,3 +11,6 @@
 getImage, getSound, getTelemetry** και **getVehiclePacket** όλες αυτές
 επιστρέφουν την custom class που έχει φτιαχτεί για το κάθε κομμάτι και
 όχι την απάντηση της Ιθάκης.
+
+### Links
+[AUTH notes](https://notebook.johnstef.com/js-notebook/)
