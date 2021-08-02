@@ -13,4 +13,4 @@ getImage, getSound, getTelemetry** και **getVehiclePacket** όλες αυτέ
 όχι την απάντηση της Ιθάκης.
 
 ### Links
-[AUTH notes](https://notebook.johnstef.com/js-notebook/)
+[AUTH notes](https://notebook.johnstef.com)
